@@ -1,7 +1,5 @@
-#Clear weakness and start grace period
-effect clear @a
 #start grace period
-tellraw @a "The barriers have been dropped! A 30 second grace period has been applied!"
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The barriers have dropped! A 30 second grace period has been applied!"}]
 scoreboard players operation $countdown countdown = $grace_period options
 function sg:game/starting/grace/countdown
 scoreboard players set $Heartbeat countdown 0

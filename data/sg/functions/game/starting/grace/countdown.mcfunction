@@ -1,4 +1,4 @@
-execute if score $countdown countdown matches 15 run tellraw @a "The grace period has 15 seconds remaining!"
+execute if score $countdown countdown matches 15 run tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The grace period has 15 seconds remaining!"}]
 execute if score $countdown countdown matches 15 as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 
 scoreboard players remove $countdown countdown 1
