@@ -5,6 +5,6 @@ clear @s
 effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
-spawnpoint @s 21 -60 -5
-tp @s 21.5 -60 -4.5
+spawnpoint @s -127 48 140
+tp @s -126.5 48 140.5
 tag @s add SGInitSpawned

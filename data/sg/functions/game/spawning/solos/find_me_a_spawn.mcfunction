@@ -13,7 +13,7 @@
 #tag @e[tag=SGNextSpawn] remove SGNextSpawn
 #tag @e[tag=SGAvailableSpawnMarker] remove SGAvailableSpawnMarker
 
-
+scoreboard players add $NextSpawn spawning 1
 execute if score $NextSpawn spawning matches 1 run tp @s @e[type=marker,tag=SGSpawn1,limit=1]
 execute if score $NextSpawn spawning matches 2 run tp @s @e[type=marker,tag=SGSpawn2,limit=1]
 execute if score $NextSpawn spawning matches 3 run tp @s @e[type=marker,tag=SGSpawn3,limit=1]
@@ -46,6 +46,5 @@ execute if score $NextSpawn spawning matches 29 run tp @s @e[type=marker,tag=SGS
 execute if score $NextSpawn spawning matches 30 run tp @s @e[type=marker,tag=SGSpawn30,limit=1]
 execute if score $NextSpawn spawning matches 31 run tp @s @e[type=marker,tag=SGSpawn31,limit=1]
 execute if score $NextSpawn spawning matches 32.. run tp @s @e[type=marker,tag=SGSpawn32,limit=1]
-scoreboard players add $NextSpawn spawning 1
 
 execute at @s run function sg:game/starting/platform/summon

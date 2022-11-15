@@ -1,5 +1,5 @@
 #close hatch
-execute at @a[tag=SGPlaying] run setblock ~ ~ ~ stone_slab[type=bottom]
+execute at @a[tag=SGPlaying] run setblock ~ ~ ~ smooth_stone_slab[type=bottom]
 #kill platform entities
 execute as @e[type=armor_stand,tag=SGPlatform] at @s run tp ~ -100 ~
 execute as @e[tag=SGPlatform] run kill @s

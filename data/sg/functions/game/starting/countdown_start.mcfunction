@@ -2,7 +2,7 @@
 #function sg:game/chests/restock/all
 function sg:game/spawning/summon/all
 #close all hatches
-execute as @e[tag=SGSpawnMarker,type=marker] at @s run setblock ~ ~12 ~ stone_slab[type=bottom]
+execute as @e[tag=SGSpawnMarker,type=marker] at @s run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
 
 ##Spawn players into map
 function sg:game/spawning/solos/spawn
