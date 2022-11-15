@@ -1,17 +1,19 @@
 ##Set up map
-function sg:game/chests/restock/all
+#function sg:game/chests/restock/all
 function sg:game/spawning/summon/all
-execute as @e[tag=SGSpawnMarker] at @s positioned ~-1 ~ ~-1 run place template sg:player_cage
+#close all hatches
+execute as @e[tag=SGSpawnMarker,type=marker] at @s run setblock ~ ~12 ~ stone_slab[type=bottom]
 
 ##Spawn players into map
 function sg:game/spawning/solos/spawn
+clear @a
 effect clear @a
 effect give @a weakness 999999 255 true
-execute as @a[tag=!SGPlaying] run function sg:game/spectator/join
+execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 
-##Start starting countdown
-scoreboard players operation $countdown countdown = $game_start_countdown options
-function sg:game/starting/countdown
+##Handle platform
+scoreboard players operation $countdown countdown = $platform_delay options
+function sg:game/starting/platform/delay_start
 
 ##New gamestate
 scoreboard players operation $state gamestate = $game gamestate

@@ -1,0 +1,6 @@
+execute if score $countdown countdown matches 15 run tellraw @a "The grace period has 15 seconds remaining!"
+execute if score $countdown countdown matches 15 as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
+
+scoreboard players remove $countdown countdown 1
+execute unless score $countdown countdown matches ..0 run schedule function sg:game/starting/grace/countdown 1s
+execute if score $countdown countdown matches ..0 run function sg:game/starting/grace/countdown_end

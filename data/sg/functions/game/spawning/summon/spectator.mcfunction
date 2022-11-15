@@ -1,1 +1,1 @@
-summon marker ~ ~ ~ {Tags:["SGSpectatorSpawnMarker"]}
+summon marker ~ ~ ~ {Tags:["SGSpectatorSpawnMarker","SGSpawnMarker"]}
