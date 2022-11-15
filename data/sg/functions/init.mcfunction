@@ -7,10 +7,10 @@ scoreboard players set $game gamestate 1
 
 #General
 scoreboard objectives add options dummy
-scoreboard players set $lobby_countdown options 11
+scoreboard players set $lobby_countdown options 10
 scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
-scoreboard players set $platform_rise_time options 130
+scoreboard players set $platform_rise_time options 129
 scoreboard players set $grace_period options 30
 scoreboard players set $max_team_player_count options 1
 scoreboard objectives add countdown dummy
