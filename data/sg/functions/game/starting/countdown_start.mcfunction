@@ -8,7 +8,7 @@ execute as @e[tag=SGSpawnMarker,type=marker] at @s run setblock ~ ~11 ~ smooth_s
 function sg:game/spawning/solos/spawn
 clear @a
 effect clear @a
-effect give @a weakness 999999 255 true
+effect give @a[tag=SGPlaying] weakness 999999 255 true
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 
 ##Handle platform

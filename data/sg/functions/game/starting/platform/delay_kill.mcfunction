@@ -1,0 +1,1 @@
+execute as @e[tag=SGPlatform] run kill @s
