@@ -1,0 +1,1 @@
+execute as @a at @s run playsound sg:game.music.countdown record @s

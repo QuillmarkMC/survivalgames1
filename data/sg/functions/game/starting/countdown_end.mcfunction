@@ -4,6 +4,7 @@ effect clear @a
 tellraw @a "The barriers have been dropped! A 30 second grace period has been applied!"
 scoreboard players operation $countdown countdown = $grace_period options
 function sg:game/starting/grace/countdown
+schedule clear sg:game/starting/heartbeat/beat
 
 #VFX
 summon lightning_bolt -219.5 55 115.5
