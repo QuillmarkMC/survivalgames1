@@ -9,4 +9,4 @@ execute if score $countdown countdown matches 1 as @a at @s run playsound block.
 execute if score $countdown countdown matches 1.. run schedule function sg:lobby/countdown 1s replace
 #execute if score $countdown countdown matches 0 run function sg:game/starting/countdown_start
 execute if score $countdown countdown matches 0 as @a at @s run playsound sg:games.begin record @s
-execute if score $countdown countdown matches 0 run schedule function sg:game/starting/countdown_start 70t
+execute if score $countdown countdown matches 0 run schedule function sg:lobby/countdown_end 70t

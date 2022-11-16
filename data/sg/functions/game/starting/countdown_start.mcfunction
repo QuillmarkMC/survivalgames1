@@ -1,5 +1,5 @@
 ##Set up map
-#function sg:game/chests/restock/all
+function sg:game/chests/restock/all
 function sg:game/spawning/summon/all
 #close all hatches
 execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
