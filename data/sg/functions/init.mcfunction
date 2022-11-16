@@ -10,8 +10,7 @@ scoreboard objectives add options dummy
 scoreboard players set $lobby_countdown options 10
 scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
-#scoreboard players set $platform_rise_time options 130
-scoreboard players set $platform_rise_time options 258
+scoreboard players set $platform_rise_time options 257
 scoreboard players set $grace_period options 30
 scoreboard players set $max_team_player_count options 1
 scoreboard objectives add countdown dummy
@@ -26,6 +25,7 @@ execute unless score $Global matchID matches 1.. run scoreboard players set $Glo
 scoreboard objectives add spawning dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add combatTimer dummy
+scoreboard players set $CombatCooldown options 100
 scoreboard objectives add win dummy
 
 ##Teams
