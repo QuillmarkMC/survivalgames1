@@ -8,6 +8,7 @@ xp set @s 0 levels
 spawnpoint @s -127 48 140
 tp @s -126.5 48 140.5
 tag @s add SGInitSpawned
+tag @s remove SGResetPlayer
 
 #state-based reset
 execute if score $state gamestate = $game gamestate run team join Spectator

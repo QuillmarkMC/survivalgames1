@@ -9,7 +9,7 @@ effect clear @a[tag=SGPlaying] levitation
 tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The game will begin in 30 seconds!"}]
 execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 scoreboard players set $Heartbeat countdown 2
-schedule function sg:game/starting/heartbeat/beat 30t
+#schedule function sg:game/starting/heartbeat/beat 30t
 #start countdown
 scoreboard players operation $countdown countdown = $game_start_countdown options
 function sg:game/starting/countdown
