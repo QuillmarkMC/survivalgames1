@@ -6,4 +6,5 @@ effect give @a[tag=SGPlaying] levitation 999999 0 true
 #reset rise timer
 scoreboard players operation $PlatformRise spawning = $platform_rise_time options
 #start ticking platform tp (delay by 2 ticks) schedule
-schedule function sg:game/starting/platform/rise_delay 2t
+#schedule function sg:game/starting/platform/rise_delay 2t
+schedule function sg:game/starting/platform/rise_delay 3t
