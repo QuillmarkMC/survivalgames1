@@ -14,4 +14,4 @@ schedule function sg:game/starting/heartbeat/beat 30t
 scoreboard players operation $countdown countdown = $game_start_countdown options
 function sg:game/starting/countdown
 #facing direction
-execute as @a[tag=SGPlaying] at @s run tp @s ~ ~ ~ facing entity @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] eyes
+#execute as @a[tag=SGPlaying] at @s run tp @s ~ ~ ~ facing entity @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] eyes

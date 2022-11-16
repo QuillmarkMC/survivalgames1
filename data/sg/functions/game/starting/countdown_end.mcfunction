@@ -10,3 +10,6 @@ execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 
 #Unleash the beasts
 execute as @e[tag=SGSpawnMarker,type=marker] at @s positioned ~-1 ~11 ~-1 run fill ~3 ~5 ~3 ~ ~ ~ air replace barrier
+
+#assign match IDs to handle reconnecting players
+scoreboard players operation @a matchID = $Global matchID

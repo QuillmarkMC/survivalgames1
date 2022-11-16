@@ -15,10 +15,17 @@ scoreboard players set $grace_period options 30
 scoreboard players set $max_team_player_count options 1
 scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2
+#detect leavers
+scoreboard objectives add leave minecraft.custom:minecraft.leave_game
+#match ID for handling DCs
+scoreboard objectives add matchID dummy
+execute unless score $Global matchID matches 1.. run scoreboard players set $Global matchID 0
 
 #Game
 scoreboard objectives add spawning dummy
 scoreboard objectives add death deathCount
+scoreboard objectives add combatTimer dummy
+scoreboard objectives add win dummy
 
 ##Teams
 team add Aqua

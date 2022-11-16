@@ -17,3 +17,6 @@ function sg:game/starting/platform/delay_start
 
 ##New gamestate
 scoreboard players operation $state gamestate = $game gamestate
+
+#update match id
+scoreboard players add $Global matchID 1
