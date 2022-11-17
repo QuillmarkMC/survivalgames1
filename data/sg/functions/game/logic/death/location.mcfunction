@@ -1,6 +1,3 @@
-#clean any previous death markers that may have been unloaded or something idk this is just in case
-kill @e[tag=SGTempDeathMarker]
-
 #get last death location in storage and convert to double
 data modify storage sg:temp_death DeathLocation set value [0d, 0d, 0d]
 execute store result storage sg:temp_death DeathLocation[0] double 1.0 run data get entity @s LastDeathLocation.pos[0]
@@ -13,4 +10,4 @@ data modify entity @e[tag=SGTempDeathMarker,limit=1,sort=nearest] Pos set from s
 
 #tp and clean
 tp @s @e[tag=SGTempDeathMarker,limit=1]
-kill @e[tag=SGTempDeathMarker]
+kill @e[tag=SGTempDeathMarker,type=marker,limit=1]

@@ -28,6 +28,27 @@ scoreboard objectives add combatTimer dummy
 scoreboard players set $CombatCooldown options 100
 scoreboard objectives add win dummy
 
+##Forceload
+#cornucopia
+#forceload add -262 164 -185 72
+#entire map monkaS
+forceload add -715 613 -662 -376
+forceload add -651 613 -598 -376
+forceload add -587 613 -534 -376
+forceload add -523 613 -470 -376
+forceload add -459 613 -406 -376
+forceload add -395 613 -342 -376
+forceload add -331 613 -278 -376
+forceload add -267 613 -214 -376
+forceload add -203 613 -150 -376
+forceload add -139 613 -86 -376
+forceload add -75 613 -22 -376
+forceload add -11 613 42 -376
+forceload add 53 613 106 -376
+forceload add 117 613 170 -376
+forceload add 181 613 234 -376
+forceload add 229 613 282 -376
+
 ##Teams
 team add Aqua
 team modify Aqua color aqua

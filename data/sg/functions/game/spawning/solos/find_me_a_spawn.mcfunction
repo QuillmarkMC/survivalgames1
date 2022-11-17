@@ -48,3 +48,5 @@ execute if score $NextSpawn spawning matches 31 run tp @s @e[type=marker,tag=SGS
 execute if score $NextSpawn spawning matches 32.. run tp @s @e[type=marker,tag=SGSpawn32,limit=1]
 
 execute at @s run function sg:game/starting/platform/summon
+
+scoreboard players add $TotalPlayers win 1
