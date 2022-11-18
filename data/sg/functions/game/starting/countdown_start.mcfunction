@@ -31,3 +31,7 @@ execute as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function 
 #bossbar
 bossbar set border visible false
 bossbar set border players @a
+
+#set number of players
+execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying]
+scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win

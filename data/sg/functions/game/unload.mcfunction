@@ -2,6 +2,7 @@
 function timer_survivalgames:remove/all
 #kill markers
 function sg:game/starting/platform/delay_kill
+schedule clear sg:game/starting/platform/rise_delay
 
 bossbar set border visible false
 schedule clear sg:game/logic/border/update
