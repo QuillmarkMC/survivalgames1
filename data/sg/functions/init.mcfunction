@@ -24,6 +24,9 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add matchID dummy
 execute unless score $Global matchID matches 1.. run scoreboard players set $Global matchID 0
 
+#lobby
+scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
+
 #Game
 scoreboard objectives add spawning dummy
 scoreboard objectives add death deathCount
@@ -90,9 +93,10 @@ team modify White color white
 team add Yellow
 team modify Yellow color yellow
 team add Solo
+team add Ready
+team modify Ready color dark_green
 team add Spectator
 team modify Spectator color dark_gray
-team modify Spectator prefix {"text":"[Spectator] "}
 
 ##Gamerules
 gamerule announceAdvancements false

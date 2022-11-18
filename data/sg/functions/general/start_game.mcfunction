@@ -1,3 +1,2 @@
 scoreboard players operation $countdown countdown = $lobby_countdown options
 function sg:lobby/countdown
-tag @a add SGPlaying

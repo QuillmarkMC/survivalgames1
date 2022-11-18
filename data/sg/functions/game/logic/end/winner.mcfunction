@@ -1,5 +1,6 @@
+tag @a[tag=SGPlaying,gamemode=adventure] add WinnerWinnerChickenDinner
+
 tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"text":"Congratulations to ","color": "white","bold": false},{"text":"","extra":[{"selector":"@a[tag=WinnerWinnerChickenDinner]"}],"bold": false},{"text": "!","bold": false}]
-#function sg:game/unload
 
 #winners
 title @a[tag=WinnerWinnerChickenDinner] times 5 120 20
@@ -12,5 +13,6 @@ title @a[tag=!WinnerWinnerChickenDinner] title {"color":"red","text":"Game Over"
 
 scoreboard players operation $FireworkFanfare win = $end_firework_total options
 function sg:game/logic/end/fireworks/schedule
+execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 1.5
 
 schedule function sg:game/logic/end/transition 160t
