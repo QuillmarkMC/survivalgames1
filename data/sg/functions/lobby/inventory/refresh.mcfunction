@@ -10,7 +10,6 @@ item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
 item replace entity @s hotbar.8 with air
 
-item replace entity @s weapon.mainhand with air
 item replace entity @s weapon.offhand with air
 
 item replace entity @s armor.head with air

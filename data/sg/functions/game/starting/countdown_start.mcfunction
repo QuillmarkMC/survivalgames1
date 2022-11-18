@@ -1,3 +1,6 @@
+##New gamestate
+scoreboard players operation $state gamestate = $game gamestate
+
 ##Set up map
 function sg:game/logic/border/set_game
 function sg:game/generate/chests/restock/all
@@ -17,9 +20,6 @@ execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 ##Handle platform
 scoreboard players operation $countdown countdown = $platform_delay options
 function sg:game/starting/platform/delay_start
-
-##New gamestate
-scoreboard players operation $state gamestate = $game gamestate
 
 #update match id
 scoreboard players add $Global matchID 1
