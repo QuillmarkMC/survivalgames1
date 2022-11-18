@@ -5,6 +5,7 @@ function sg:game/starting/platform/delay_kill
 
 bossbar set border visible false
 schedule clear sg:game/logic/border/update
+schedule clear sg:game/logic/border/shrink
 
 scoreboard players reset * combatTimer
 scoreboard players set $countdown countdown 0

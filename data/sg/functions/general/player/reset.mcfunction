@@ -11,6 +11,7 @@ scoreboard players reset @s click
 tag @s add SGInitSpawned
 tag @s remove SGResetPlayer
 tag @s remove WinnerWinnerChickenDinner
+tag @s remove SGPlaying
 
 #state-based reset
 execute if score $state gamestate = $game gamestate run team join Spectator
