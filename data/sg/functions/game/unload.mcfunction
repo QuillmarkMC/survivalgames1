@@ -8,3 +8,5 @@ scoreboard players set $countdown countdown 0
 scoreboard players set $Heartbeat countdown 0
 
 tag @a add SGResetPlayer
+
+function sg:lobby/load

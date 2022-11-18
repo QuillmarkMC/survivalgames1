@@ -13,3 +13,6 @@ execute as @e[tag=SGSpawnMarker,type=marker] at @s positioned ~-1 ~11 ~-1 run fi
 
 #assign match IDs to handle reconnecting players
 scoreboard players operation @a matchID = $Global matchID
+
+#destroy timer model
+function timer_survivalgames:remove/all

@@ -4,6 +4,7 @@ scoreboard objectives add gamestate dummy
 execute unless score $state gamestate matches 1.. run scoreboard players set $state gamestate 0
 scoreboard players set $lobby gamestate 0
 scoreboard players set $game gamestate 1
+execute unless score $TimerModelInstall gamestate matches 1.. run function sg:install_timer
 
 #General
 scoreboard objectives add options dummy
@@ -13,6 +14,7 @@ scoreboard players set $platform_delay options 5
 scoreboard players set $platform_rise_time options 257
 scoreboard players set $grace_period options 30
 scoreboard players set $max_team_player_count options 1
+scoreboard players set $end_firework_total options 3
 scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2
 #detect leavers
@@ -27,6 +29,7 @@ scoreboard objectives add death deathCount
 scoreboard objectives add combatTimer dummy
 scoreboard players set $CombatCooldown options 100
 scoreboard objectives add win dummy
+scoreboard objectives add playerPosition dummy
 
 ##Forceload
 #cornucopia

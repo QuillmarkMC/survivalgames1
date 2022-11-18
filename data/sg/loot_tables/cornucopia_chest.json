@@ -69,7 +69,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 6,
           "name": "minecraft:iron_sword"
         },
         {
@@ -79,7 +79,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 6,
           "name": "minecraft:stone_axe"
         },
         {

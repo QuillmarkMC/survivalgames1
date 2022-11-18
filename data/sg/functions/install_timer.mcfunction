@@ -1,0 +1,2 @@
+function timer_survivalgames:install
+scoreboard players set $TimerModelInstall gamestate 1

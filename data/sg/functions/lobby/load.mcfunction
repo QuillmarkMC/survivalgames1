@@ -1,0 +1,1 @@
+scoreboard players operation $state gamestate = $lobby gamestate
