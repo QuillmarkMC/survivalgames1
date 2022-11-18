@@ -15,3 +15,4 @@ tag @s remove WinnerWinnerChickenDinner
 execute if score $state gamestate = $game gamestate run team join Spectator
 execute if score $state gamestate = $game gamestate run gamemode spectator
 execute if score $state gamestate = $game gamestate run tp @s @e[tag=SGSpectatorSpawnMarker,limit=1]
+execute if score $state gamestate = $game gamestate run bossbar set border players @a
