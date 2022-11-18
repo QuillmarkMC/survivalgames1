@@ -4,4 +4,5 @@ execute store result bossbar border max run scoreboard players get $Timer border
 bossbar set border visible true
 scoreboard players operation $State border = $Advance border
 function sg:game/logic/border/update
-#schedule function sg:game/logic/border/shrink 600s
+execute as @a at @s run playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.75 1
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The border has begun to shrink!"}]
