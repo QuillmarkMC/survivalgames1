@@ -164,7 +164,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -176,7 +176,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -188,7 +188,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -200,7 +200,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"knockback\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"knockback\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -212,7 +212,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"power\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"power\",lvl:1s}]}",
               "count": 1
             }
           ]

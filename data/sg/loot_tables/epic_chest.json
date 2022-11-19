@@ -87,7 +87,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:2s}]}",
+              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:3s}]}",
               "count": 1
             }
           ]
@@ -99,7 +99,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:2s}]}",
+              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:3s}]}",
               "count": 1
             }
           ]
@@ -111,7 +111,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:2s}]}",
+              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:3s}]}",
               "count": 1
             }
           ]
@@ -123,7 +123,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"flame\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"flame\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -135,7 +135,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"power\",lvl:2s}]}",
+              "tag": "{StoredEnchantments:[{id:\"power\",lvl:3s}]}",
               "count": 1
             }
           ]
@@ -147,7 +147,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"fire_aspect\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"fire_aspect\",lvl:1s}]}",
               "count": 1
             }
           ]
@@ -159,7 +159,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"infinity\",lvl:0s}]}",
+              "tag": "{StoredEnchantments:[{id:\"infinity\",lvl:1s}]}",
               "count": 1
             }
           ]
