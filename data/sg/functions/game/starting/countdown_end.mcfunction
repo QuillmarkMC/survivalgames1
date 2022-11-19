@@ -18,9 +18,9 @@ scoreboard players operation @a matchID = $Global matchID
 function timer_survivalgames:remove/all
 
 #bossbar
-scoreboard players set $Timer border 600
+scoreboard players set $Timer border 300
 execute store result bossbar border max run scoreboard players get $Timer border
 bossbar set border visible true
 scoreboard players operation $State border = $Grace border
 function sg:game/logic/border/update
-schedule function sg:game/logic/border/shrink 600s
+schedule function sg:game/logic/border/shrink 300s

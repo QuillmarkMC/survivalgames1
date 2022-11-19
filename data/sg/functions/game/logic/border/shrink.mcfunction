@@ -1,5 +1,5 @@
-worldborder set 50 1200
-scoreboard players set $Timer border 1200
+worldborder set 50 600
+scoreboard players set $Timer border 600
 execute store result bossbar border max run scoreboard players get $Timer border
 bossbar set border visible true
 scoreboard players operation $State border = $Advance border
