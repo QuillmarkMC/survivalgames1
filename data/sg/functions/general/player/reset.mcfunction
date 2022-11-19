@@ -5,8 +5,8 @@ effect clear @s
 advancement grant @s only sg:inv_changed
 xp set @s 0 points
 xp set @s 0 levels
-spawnpoint @s -127 48 140
-tp @s -126.5 48 140.5
+spawnpoint @s -219 15 128
+tp @s -219.5 15.0625 128.5
 scoreboard players reset @s click
 tag @s add SGInitSpawned
 tag @s remove SGResetPlayer
