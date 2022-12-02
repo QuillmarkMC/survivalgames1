@@ -1,0 +1,2 @@
+execute if entity @s[tag=SGCommonChest] run data modify block ~ ~ ~ LootTable set value "sg:common_chest"
+execute if entity @s[tag=SGCornucopiaChest] run data modify block ~ ~ ~ LootTable set value "sg:rare_chest"

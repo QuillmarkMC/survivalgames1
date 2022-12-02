@@ -16,6 +16,7 @@ scoreboard players set $grace_period options 30
 scoreboard players set $max_team_player_count options 1
 scoreboard players set $end_firework_total options 3
 scoreboard players set $initial_border_grace options 600
+scoreboard players set $restock_chests options 300
 scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2
 #detect leavers
@@ -35,6 +36,8 @@ scoreboard players set $CombatCooldown options 100
 scoreboard objectives add win dummy
 scoreboard objectives add playerPosition dummy
 scoreboard objectives add border dummy
+scoreboard objectives add timers dummy
+scoreboard objectives add oob dummy
 
 function sg:game/logic/border/init_bossbar
 
