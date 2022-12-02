@@ -112,7 +112,6 @@ gamerule doInsomnia false
 gamerule doImmediateRespawn true
 gamerule doLimitedCrafting false
 gamerule doMobLoot true
-#mob spawning?
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doTileDrops true
@@ -131,3 +130,5 @@ gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
 #turn this off before prod
 gamerule sendCommandFeedback true
+
+difficulty easy
