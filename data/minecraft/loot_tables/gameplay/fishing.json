@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 40,
+            "quality": -2,
+            "name": "sg:fishing/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 30,
+            "quality": 2,
+            "name": "sg:fishing/secret",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "location": {
+                      "position": {
+                        "x": {
+                          "min": -374.5,
+                          "max": -309.5
+                        },
+                        "y": {
+                          "min": 24,
+                          "max": 35
+                        },
+                        "z": {
+                          "min": 213.5,
+                          "max": 284
+                        }
+                      }
+                    }
+                  }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 60,
+            "quality": -1,
+            "name": "sg:fishing/fish"
+          }
+        ]
+      }
+    ]
+  }
+  

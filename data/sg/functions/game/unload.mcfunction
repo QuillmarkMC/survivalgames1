@@ -7,6 +7,9 @@ schedule clear sg:game/starting/platform/rise_delay
 bossbar set border visible false
 schedule clear sg:game/logic/border/update
 schedule clear sg:game/logic/border/shrink
+schedule clear sg:game/logic/restock/timer
+
+stopsound @a * sg:game.music.countdown
 
 scoreboard players reset * combatTimer
 scoreboard players set $countdown countdown 0
