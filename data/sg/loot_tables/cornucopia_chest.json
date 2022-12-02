@@ -28,7 +28,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 10,
           "name": "minecraft:gold_nugget",
           "functions": [
             {
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 10,
           "name": "minecraft:iron_ingot",
           "functions": [
             {

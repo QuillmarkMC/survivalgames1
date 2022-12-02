@@ -1,6 +1,14 @@
 {
     "pack": {
         "pack_format": 10,
-        "description": "Datapack for PONG's Parkour Map."
+        "description": "Datapack for Ruins of Altrac.",
+        "filter": {
+            "block": [
+                {
+                    "namespace": "minecraft",
+                    "path": "advancements/.*"
+                }
+            ]
+        }
     }
 }

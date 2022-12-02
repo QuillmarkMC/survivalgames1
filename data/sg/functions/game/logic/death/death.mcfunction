@@ -10,5 +10,5 @@ scoreboard players set @s combatTimer 0
 function sg:game/spawning/spectator/join
 function sg:game/logic/death/location
 execute at @s run function sg:game/logic/lightning/summon
-execute at @s run playsound entity.elder_guardian.curse record @s ~ ~ ~ 1 0.5
+execute at @s run playsound entity.wither.death record @s ~ ~ ~ 1 1
 function sg:game/logic/check_for_win
