@@ -67,3 +67,16 @@ execute positioned 202 57 -354 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareC
 execute positioned 250 46 380 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
 execute positioned -688 72 589 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
 execute positioned -665 66 -172 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -359 22 235 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -364 22 248 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -341 27 261 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -314 27 256 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -336 28 236 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -351 29 223 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -364 29 216 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -343 28 239 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -361 29 256 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -375 23 239 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -371 22 213 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -351 28 249 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -374 24 200 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
