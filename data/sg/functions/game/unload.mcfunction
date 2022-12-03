@@ -4,6 +4,7 @@ function timer_survivalgames:remove/all
 function sg:game/starting/platform/delay_kill
 schedule clear sg:game/starting/platform/rise_delay
 
+scoreboard players set $Timer border -1
 bossbar set border visible false
 schedule clear sg:game/logic/border/update
 schedule clear sg:game/logic/border/shrink
