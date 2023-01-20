@@ -27,6 +27,23 @@ execute unless score $Global matchID matches 1.. run scoreboard players set $Glo
 
 #lobby
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add teamID dummy
+scoreboard players set $Team.Aqua teamID 1
+scoreboard players set $Team.Black teamID 2
+scoreboard players set $Team.Blue teamID 3
+scoreboard players set $Team.Cyan teamID 4
+scoreboard players set $Team.Dark_Blue teamID 5
+scoreboard players set $Team.Dark_Gray teamID 6
+scoreboard players set $Team.Dark_Green teamID 7
+scoreboard players set $Team.Purple teamID 8
+scoreboard players set $Team.Dark_Red teamID 9
+scoreboard players set $Team.Gold teamID 10
+scoreboard players set $Team.Gray teamID 11
+scoreboard players set $Team.Green teamID 12
+scoreboard players set $Team.Magenta teamID 13
+scoreboard players set $Team.Red teamID 14
+scoreboard players set $Team.White teamID 15
+scoreboard players set $Team.Yellow teamID 16
 
 #Game
 scoreboard objectives add spawning dummy
@@ -81,8 +98,8 @@ team add Purple
 team modify Purple color dark_purple
 team add Dark_Red
 team modify Dark_Red color dark_red
-team add Orange
-team modify Orange color gold
+team add Gold
+team modify Gold color gold
 team add Gray
 team modify Gray color gray
 team add Green
@@ -126,7 +143,7 @@ gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
-gamerule showDeathMessages false
+gamerule showDeathMessages true
 gamerule spectatorsGenerateChunks false
 #turn this off before prod
 gamerule sendCommandFeedback true

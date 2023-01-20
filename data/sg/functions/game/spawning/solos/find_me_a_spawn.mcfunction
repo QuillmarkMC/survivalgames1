@@ -1,18 +1,3 @@
-#check if no more available spots
-#function sg:game/spawning/solos/check_overcrowd
-
-#find all available spots
-#execute as @e[tag=SGSpawnMarker] if score @s spawning < $players_per_spawn spawning run tag @s add SGAvailableSpawnMarker
-
-#mark one for use and tp to it
-#execute as @e[tag=SGAvailableSpawnMarker,sort=random,limit=1] run tag @s add SGNextSpawn
-#tp @s @e[tag=SGNextSpawn,limit=1]
-#execute as @e[tag=SGNextSpawn] run scoreboard players add @s spawning 1
-
-#reset
-#tag @e[tag=SGNextSpawn] remove SGNextSpawn
-#tag @e[tag=SGAvailableSpawnMarker] remove SGAvailableSpawnMarker
-
 scoreboard players add $NextSpawn spawning 1
 execute if score $NextSpawn spawning matches 1 run tp @s @e[type=marker,tag=SGSpawn1,limit=1]
 execute if score $NextSpawn spawning matches 2 run tp @s @e[type=marker,tag=SGSpawn2,limit=1]
@@ -45,8 +30,9 @@ execute if score $NextSpawn spawning matches 28 run tp @s @e[type=marker,tag=SGS
 execute if score $NextSpawn spawning matches 29 run tp @s @e[type=marker,tag=SGSpawn29,limit=1]
 execute if score $NextSpawn spawning matches 30 run tp @s @e[type=marker,tag=SGSpawn30,limit=1]
 execute if score $NextSpawn spawning matches 31 run tp @s @e[type=marker,tag=SGSpawn31,limit=1]
-execute if score $NextSpawn spawning matches 32.. run tp @s @e[type=marker,tag=SGSpawn32,limit=1]
+execute if score $NextSpawn spawning matches 32 run tp @s @e[type=marker,tag=SGSpawn32,limit=1]
 
-execute at @s run function sg:game/starting/platform/summon
+execute unless score $NextSpawn spawning matches 33.. at @s run function sg:game/starting/platform/summon
+execute if score $NextSpawn spawning matches 33.. run function sg:general/error/max_players
 
-scoreboard players add $TotalPlayers win 1
+execute unless score $NextSpawn spawning matches 33.. run scoreboard players add $TotalPlayers win 1

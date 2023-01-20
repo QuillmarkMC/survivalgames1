@@ -1,5 +1,6 @@
 gamemode adventure @s
 team leave @s
+scoreboard players reset @s teamID
 #remove tags
 clear @s
 effect clear @s
