@@ -1,3 +1,3 @@
 team join Yellow @s
-execute store result score #YellowCount teams if entity @a[team=Yellow]
+function sg:lobby/team_select/update_count
 tellraw @s [{"text": ""},{"text":"[!] ","color":"#ed771c","bold": true},{"text": "You joined the "},{"text": "Yellow","color": "yellow"},{"text": " team!"}]
