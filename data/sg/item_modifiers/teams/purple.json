@@ -42,7 +42,14 @@
         ],
         [
           {
-            "text": "\n",
+            "text": "",
+            "color": "white",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "",
             "color": "white",
             "italic": false
           },

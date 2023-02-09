@@ -1,9 +1,10 @@
 ##Scoreboards
 #Gamestate
 scoreboard objectives add gamestate dummy
-execute unless score $state gamestate matches 1.. run scoreboard players set $state gamestate 0
 scoreboard players set $lobby gamestate 0
 scoreboard players set $game gamestate 1
+execute unless score $state gamestate = $game gamestate run scoreboard players operation $state gamestate = $lobby gamestate
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 execute unless score $TimerModelInstall gamestate matches 1.. run function sg:install_timer
 
 #General
