@@ -13,7 +13,6 @@ scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
 scoreboard players set $platform_rise_time options 257
 scoreboard players set $grace_period options 30
-scoreboard players set $max_team_player_count options 1
 scoreboard players set $end_firework_total options 3
 scoreboard players set $initial_border_grace options 600
 scoreboard players set $restock_chests options 300
@@ -44,6 +43,9 @@ scoreboard players set $Team.Magenta teamID 13
 scoreboard players set $Team.Red teamID 14
 scoreboard players set $Team.White teamID 15
 scoreboard players set $Team.Yellow teamID 16
+scoreboard objectives add teams dummy
+scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 
 #Game
 scoreboard objectives add spawning dummy

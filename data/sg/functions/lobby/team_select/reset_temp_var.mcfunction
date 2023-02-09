@@ -1,0 +1,16 @@
+scoreboard players set $TempAqua teams 0
+scoreboard players set $TempBlack teams 0
+scoreboard players set $TempBlue teams 0
+scoreboard players set $TempCyan teams 0
+scoreboard players set $TempDark_Blue teams 0
+scoreboard players set $TempDark_Gray teams 0
+scoreboard players set $TempDark_Green teams 0
+scoreboard players set $TempPurple teams 0
+scoreboard players set $TempDark_Red teams 0
+scoreboard players set $TempGold teams 0
+scoreboard players set $TempGray teams 0
+scoreboard players set $TempGreen teams 0
+scoreboard players set $TempMagenta teams 0
+scoreboard players set $TempRed teams 0
+scoreboard players set $TempWhite teams 0
+scoreboard players set $TempYellow teams 0

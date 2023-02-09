@@ -1,0 +1,59 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Click to join the Red team!",
+            "color": "dark_gray",
+            "italic": true
+          }
+        ],
+        [
+          {
+            "text": "Current Players: ",
+            "color": "#ed771c",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "#RedCount",
+              "objective": "teams"
+            },
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Max Players: ",
+            "color": "#ed771c",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$MaxTeamSize",
+              "objective": "teams"
+            },
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "\n",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "selector": "@a[team=Red]",
+            "color": "white",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": true
+    }
+  ]
+  
