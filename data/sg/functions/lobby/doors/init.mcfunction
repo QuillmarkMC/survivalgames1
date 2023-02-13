@@ -1,5 +1,4 @@
-#kill doors
-#summon doors
+function sg:lobby/doors/summon
 #reset open/close variables
 scoreboard players set #Closed lobbyDoor 0
 scoreboard players set #Open lobbyDoor 1
