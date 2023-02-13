@@ -14,4 +14,7 @@ scoreboard players operation $OnlinePlayerCount teams = #TempOnlinePlayers teams
 #tick team selection enderchest logic
 execute at @e[type=marker,tag=TeamSelect] as @a[distance=..8] run function sg:lobby/team_select/check
 
+#check door zones
+function sg:lobby/doors/tick
+
 kill @e[type=item]

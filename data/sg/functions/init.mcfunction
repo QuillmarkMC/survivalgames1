@@ -47,6 +47,7 @@ scoreboard players set $Team.Yellow teamID 16
 scoreboard objectives add teams dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
+scoreboard objectives add lobbyDoor dummy
 
 #Game
 scoreboard objectives add spawning dummy

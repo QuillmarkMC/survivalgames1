@@ -1,0 +1,8 @@
+function sg:lobby/doors/destroy
+
+#train doors
+summon marker -219.5 16.0 99.5 {Tags:["lobbyDoor","lobbyTrainDoorMarker"]}
+summon armor_stand -220.5 14.52 99.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["lobbyDoor","lobbyDoorTrainMove"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:yellow_glazed_terracotta",Properties:{facing:"east"}},Time:-2147483648,DropItem:0b,HurtEntities:0b,Tags:["lobbyDoor"]},{id:"minecraft:shulker",Invulnerable:1b,NoAI:1b,AttachFace:0b,Color:4b,Tags:["lobbyDoor"]}],Rotation:[90.0F,0.0F]}
+summon armor_stand -220.0 14.52 99.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["lobbyDoor","lobbyDoorTrainMove"],DisabledSlots:4144959,Passengers:[{id:"minecraft:shulker",Invulnerable:1b,NoAI:1b,AttachFace:0b,Color:4b,Tags:["lobbyDoor"]}],Rotation:[90.0F,0.0F]}
+summon armor_stand -218.5 14.52 99.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["lobbyDoor","lobbyDoorTrainMove"],DisabledSlots:4144959,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:yellow_glazed_terracotta",Properties:{facing:"west"}},Time:-2147483648,DropItem:0b,HurtEntities:0b,Tags:["lobbyDoor"]},{id:"minecraft:shulker",Invulnerable:1b,NoAI:1b,AttachFace:0b,Color:4b,Tags:["lobbyDoor"]}],Rotation:[-90.0F,0.0F]}
+summon armor_stand -219.0 14.52 99.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["lobbyDoor","lobbyDoorTrainMove"],DisabledSlots:4144959,Passengers:[{id:"minecraft:shulker",Invulnerable:1b,NoAI:1b,AttachFace:0b,Color:4b,Tags:["lobbyDoor"]}],Rotation:[-90.0F,0.0F]}
