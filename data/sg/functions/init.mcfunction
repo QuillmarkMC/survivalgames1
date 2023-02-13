@@ -156,7 +156,7 @@ gamerule doTileDrops true
 gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule drowningDamage true
-gamerule fallDamage true
+#gamerule fallDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
