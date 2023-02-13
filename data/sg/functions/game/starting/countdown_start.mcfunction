@@ -35,3 +35,6 @@ bossbar set border players @a
 #set number of players
 execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemode=adventure]
 scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
+
+#gamerule
+gamerule fallDamage true

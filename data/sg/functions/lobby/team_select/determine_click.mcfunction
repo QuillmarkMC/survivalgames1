@@ -18,6 +18,8 @@ execute store success score $TempMagenta teams run clear @s bedrock{JoinTeamMage
 execute store success score $TempRed teams run clear @s bedrock{JoinTeamRed:1} 1
 execute store success score $TempWhite teams run clear @s bedrock{JoinTeamWhite:1} 1
 execute store success score $TempYellow teams run clear @s bedrock{JoinTeamYellow:1} 1
+execute store success score $TempLeave teams run clear @s bedrock{JoinTeamLeave:1} 1
+execute store success score $TempRandom teams run clear @s bedrock{JoinTeamRandom:1} 1
 
 #run logic based on what item was selected
 execute if score $TempAqua teams matches 1.. run function sg:lobby/team_select/click_logic/aqua/request
@@ -36,6 +38,8 @@ execute if score $TempMagenta teams matches 1.. run function sg:lobby/team_selec
 execute if score $TempRed teams matches 1.. run function sg:lobby/team_select/click_logic/red/request
 execute if score $TempWhite teams matches 1.. run function sg:lobby/team_select/click_logic/white/request
 execute if score $TempYellow teams matches 1.. run function sg:lobby/team_select/click_logic/yellow/request
+execute if score $TempLeave teams matches 1.. run function sg:lobby/team_select/click_logic/leave_team/leave
+execute if score $TempRandom teams matches 1.. run function sg:lobby/team_select/click_logic/random/random
 #execute if score $TempUnavailable shop matches 1.. run function 
 
 #update ender chest inventory

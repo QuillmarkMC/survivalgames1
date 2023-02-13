@@ -53,9 +53,9 @@ item modify entity @s enderchest.16 sg:teams/yellow
 #item replace entity @s enderchest.18 with air
 #item replace entity @s enderchest.19 with air
 #item replace entity @s enderchest.20 with air
-item replace entity @s enderchest.21 with air
+item replace entity @s enderchest.21 with bedrock{JoinTeamRandom:1,TeamSelect:1,display:{Name:'{"text":"RANDOM","color":"#ed771c","bold":true,"italic":false}',Lore:['{"text": "Click to select a random team!","italic": true,"color": "dark_gray"}','{"text": "You will be assigned a random","color": "gray"}','{"text": "team when the game begins.","color": "gray"}']},HideFlags:127,CustomModelData:18}
 #item replace entity @s enderchest.22 with air
-item replace entity @s enderchest.23 with air
+item replace entity @s enderchest.23 with bedrock{JoinTeamLeave:1,TeamSelect:1,display:{Name:'{"text":"LEAVE TEAM","color":"dark_red","bold":true,"italic":false}',Lore:['{"text": "Click to leave your current team!","italic": true,"color": "dark_gray"}','{"text": "If the game starts while you","color": "gray"}','{"text": "are not on a team, you will","color": "gray"}','{"text": "be set as a spectator.","color": "gray"}']},HideFlags:127,CustomModelData:17}
 #item replace entity @s enderchest.24 with air
 #item replace entity @s enderchest.25 with air
 #item replace entity @s enderchest.26 with air

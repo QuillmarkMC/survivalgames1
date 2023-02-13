@@ -14,3 +14,5 @@ scoreboard players set $TempMagenta teams 0
 scoreboard players set $TempRed teams 0
 scoreboard players set $TempWhite teams 0
 scoreboard players set $TempYellow teams 0
+scoreboard players set $TempRandom teams 0
+scoreboard players set $TempLeave teams 0
