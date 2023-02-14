@@ -21,6 +21,10 @@ execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 scoreboard players operation $countdown countdown = $platform_delay options
 function sg:game/starting/platform/delay_start
 
+##Map events
+#mine bridge collapse
+function sg:game/logic/mines/reset
+
 #update match id
 scoreboard players add $Global matchID 1
 

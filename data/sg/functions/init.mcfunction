@@ -59,6 +59,7 @@ scoreboard objectives add playerPosition dummy
 scoreboard objectives add border dummy
 scoreboard objectives add timers dummy
 scoreboard objectives add oob dummy
+scoreboard objectives add caveBridge dummy
 
 function sg:game/logic/border/init_bossbar
 
@@ -82,6 +83,8 @@ forceload add 53 613 106 -376
 forceload add 117 613 170 -376
 forceload add 181 613 234 -376
 forceload add 229 613 282 -376
+#mine bridge
+#forceload add 172 1 183 29
 
 ##Teams
 team add Aqua
