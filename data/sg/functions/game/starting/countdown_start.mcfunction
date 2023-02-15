@@ -24,6 +24,8 @@ function sg:game/starting/platform/delay_start
 ##Map events
 #mine bridge collapse
 function sg:game/logic/mines/reset
+#temple flood
+function sg:game/logic/temple/reset/start
 
 #update match id
 scoreboard players add $Global matchID 1
