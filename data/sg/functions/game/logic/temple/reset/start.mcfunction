@@ -1,5 +1,6 @@
 scoreboard players reset * temple
 scoreboard players set $FloodState temple 0
+scoreboard players set $FloodLevel temple 0
 
 #recursive call to clear all lava
 scoreboard players set $TempleResetLevel temple 0
