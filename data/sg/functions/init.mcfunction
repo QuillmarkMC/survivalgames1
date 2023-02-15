@@ -60,6 +60,8 @@ scoreboard objectives add border dummy
 scoreboard objectives add timers dummy
 scoreboard objectives add oob dummy
 scoreboard objectives add caveBridge dummy
+scoreboard objectives add temple dummy
+scoreboard objectives add openChest minecraft.custom:open_chest
 
 function sg:game/logic/border/init_bossbar
 

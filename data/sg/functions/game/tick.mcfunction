@@ -11,3 +11,7 @@ execute as @a[scores={combatTimer=1..}] run scoreboard players remove @s combatT
 
 #out of bounds
 execute as @a[tag=SGPlaying,gamemode=adventure] run function sg:game/logic/out_of_bounds/check
+
+#temple warning
+execute as @a[scores={openChest=1..}] run function sg:game/logic/temple/flood/check
+execute if entity @a[predicate=sg:temple/lava_room,gamemode=adventure] if score $FloodState temple matches 0 run function sg:game/logic/temple/flood/schedule
