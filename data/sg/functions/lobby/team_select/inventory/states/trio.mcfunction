@@ -23,6 +23,7 @@ item modify entity @s enderchest.6 sg:teams/gray
 item replace entity @s enderchest.7 with bedrock{JoinTeamGreen:1,TeamSelect:1,display:{Name:'{"text":"GREEN","color":"green","bold":true,"italic":false}'},HideFlags:127,CustomModelData:12}
 item modify entity @s enderchest.7 sg:teams/green
 
+item replace entity @s enderchest.8 with air
 item replace entity @s enderchest.9 with air
 item replace entity @s enderchest.10 with air
 item replace entity @s enderchest.11 with air

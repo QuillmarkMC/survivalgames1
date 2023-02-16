@@ -175,7 +175,6 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages true
 gamerule spectatorsGenerateChunks false
-#turn this off before prod
-gamerule sendCommandFeedback true
+gamerule sendCommandFeedback false
 
 difficulty easy
