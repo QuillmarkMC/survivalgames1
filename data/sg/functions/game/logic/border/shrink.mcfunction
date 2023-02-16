@@ -1,3 +1,4 @@
+#TODO: check border advance time from lobby
 worldborder set 50 600
 scoreboard players set $Timer border 600
 execute store result bossbar border max run scoreboard players get $Timer border
@@ -7,5 +8,6 @@ function sg:game/logic/border/update
 execute as @a at @s run playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.75 1
 tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The border has begun to shrink!"}]
 
+#TODO: check restock time from lobby
 scoreboard players operation $Restock timers = $restock_chests options
 schedule function sg:game/logic/restock/timer 1s

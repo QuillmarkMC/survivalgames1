@@ -4,4 +4,4 @@ execute if score $Restock timers matches 60 run tellraw @a [{"text": ""},{"text"
 execute if score $Restock timers matches 60 as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 
 execute unless score $Restock timers matches ..0 run schedule function sg:game/logic/restock/timer 1s
-execute if score $Restock timers matches 0 run function sg:game/generate/chests/restock/cornucopia
+execute if score $Restock timers matches 0 run function sg:game/generate/chests/restock/restock

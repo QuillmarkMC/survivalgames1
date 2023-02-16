@@ -1,0 +1,2 @@
+setblock -183 16 112 oak_wall_sign[facing=west]{GlowingText:true,Color:"gray",Text1:'{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 11"},"text": ""}',Text2:'{"text":"Grace Period","color":"light_purple"}',Text3:'{"score":{"name":"$grace_period","objective":"options"},"color":"red"}',Text4:'{"text":"seconds","color":"gold"}'}
+execute if score $GracePeriod.State lobbySigns matches 0 run data merge block -183 16 112 {Text3:'{"score":{"name":"$grace_period","objective":"options"},"color":"green"}'}

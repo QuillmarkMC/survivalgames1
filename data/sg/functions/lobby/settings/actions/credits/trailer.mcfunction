@@ -1,0 +1,1 @@
+tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Sorry, this isn't available yet :("}]

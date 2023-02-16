@@ -1,0 +1,2 @@
+#tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Click "},{"text":"here","bold": true,"underlined": true,"color": "yellow","hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]},"clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=Twai-14iz_I&list=PL7D-41CZ_KECQHe6bxTRFhKEUEnF6IYjl"}},{"text":" to view the Hook, Line, & Creeper map trailer!"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Sorry, this isn't available yet :("}]

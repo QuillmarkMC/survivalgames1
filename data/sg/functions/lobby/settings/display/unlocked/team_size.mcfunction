@@ -1,0 +1,2 @@
+setblock -183 16 113 oak_wall_sign[facing=west]{GlowingText:true,Color:"gray",Text1:'{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 10"},"text": ""}',Text2:'{"text":"Max Team Size","color":"light_purple"}',Text3:'{"score":{"name":"$MaxTeamSize","objective":"teams"},"color":"red"}',Text4:""}
+execute if score $MaxTeamSize.State lobbySigns matches 0 run data merge block -183 16 113 {Text3:'{"score":{"name":"$MaxTeamSize","objective":"teams"},"color":"green"}'}

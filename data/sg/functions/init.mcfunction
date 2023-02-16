@@ -4,7 +4,6 @@ scoreboard objectives add gamestate dummy
 scoreboard players set $lobby gamestate 0
 scoreboard players set $game gamestate 1
 execute unless score $state gamestate = $game gamestate run scoreboard players operation $state gamestate = $lobby gamestate
-execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 execute unless score $TimerModelInstall gamestate matches 1.. run function sg:install_timer
 
 #General
@@ -13,7 +12,6 @@ scoreboard players set $lobby_countdown options 10
 scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
 scoreboard players set $platform_rise_time options 257
-scoreboard players set $grace_period options 30
 scoreboard players set $end_firework_total options 3
 scoreboard players set $initial_border_grace options 600
 scoreboard players set $restock_chests options 300
@@ -48,6 +46,11 @@ scoreboard objectives add teams dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add lobbyDoor dummy
+scoreboard objectives add lobbySigns trigger
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/settings/init
+scoreboard objectives add lobbyCountdown dummy
+scoreboard objectives add teamSelectTimer dummy
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 
 #Game
 scoreboard objectives add spawning dummy

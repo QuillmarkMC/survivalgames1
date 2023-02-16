@@ -5,6 +5,6 @@ execute positioned 177 99 25 run playsound entity.generic.explode block @a ~ ~ ~
 setblock 176 100 26 stone
 #cause dripstone to fall
 setblock 177 99 25 air
-schedule function sg:game/logic/mines/target/explode/target4/end 40t
+schedule function sg:game/logic/mines/target/explode/target4/end 45t
 
 execute unless score $Target3State caveBridge matches 1 run schedule function sg:game/logic/mines/target/explode/target3/start 10t
