@@ -27,7 +27,7 @@ function sg:lobby/doors/tick
 execute as @a[scores={death=1..}] run function sg:lobby/arena/death
 
 #check if a player left the arena without dying
-execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena] run function sg:lobby/arena/deserter
+execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] run function sg:lobby/arena/deserter
 
 #check if player entered arena
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena] run function sg:lobby/arena/enter
