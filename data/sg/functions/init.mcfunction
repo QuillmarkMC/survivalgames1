@@ -166,7 +166,6 @@ gamerule doTileDrops true
 gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule drowningDamage true
-#gamerule fallDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
@@ -174,7 +173,6 @@ gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
-gamerule showDeathMessages true
 gamerule spectatorsGenerateChunks false
 gamerule sendCommandFeedback false
 

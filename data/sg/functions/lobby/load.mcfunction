@@ -3,6 +3,7 @@ scoreboard players set $Count lobbyCountdown -1
 schedule clear sg:lobby/countdown
 
 gamerule fallDamage false
+gamerule showDeathMessages false
 difficulty peaceful
 
 function sg:lobby/team_select/init
