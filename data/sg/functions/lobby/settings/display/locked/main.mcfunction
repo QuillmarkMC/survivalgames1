@@ -8,4 +8,4 @@ function sg:lobby/settings/display/locked/border_grace
 function sg:lobby/settings/display/locked/border_size
 function sg:lobby/settings/display/locked/border_advance
 function sg:lobby/settings/display/locked/restock_time
-setblock -183 15 115 oak_wall_sign[facing=west]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 1003"},"text": ""}',Text2:'{"text":"Lock Settings","color":"yellow"}',Text3:'{"text":"[Admins Only]","color":"white"}',Text4:""}
+setblock -183 15 115 oak_wall_sign[facing=west]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 1004"},"text": ""}',Text2:'{"text":"Lock Settings","color":"yellow"}',Text3:'{"text":"[Admins Only]","color":"white"}',Text4:""}

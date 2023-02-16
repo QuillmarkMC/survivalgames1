@@ -4,8 +4,8 @@ execute if score @s lobbySigns matches 1000.. if entity @s[tag=Admin] run scoreb
 #trigger based on action (sign/chat click)
 execute if score @s lobbySigns matches 1 run function sg:lobby/start_logic/check_num_players
 execute if score @s lobbySigns matches 2 if score $Count lobbyCountdown matches 0.. run function sg:lobby/start_logic/interrupt/permission
-#lock signs
-#unlock signs
+execute if score @s lobbySigns matches 3 run function sg:lobby/settings/actions/lock
+execute if score @s lobbySigns matches 4 run function sg:lobby/settings/actions/unlock/manual
 execute if score @s lobbySigns matches 5 run function sg:lobby/settings/actions/credits/download
 execute if score @s lobbySigns matches 6 run function sg:lobby/settings/actions/credits/trailer
 execute if score @s lobbySigns matches 10 run function sg:lobby/settings/actions/team_size
