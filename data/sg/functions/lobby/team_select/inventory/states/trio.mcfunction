@@ -8,8 +8,8 @@ item modify entity @s enderchest.1 sg:teams/aqua
 item replace entity @s enderchest.2 with bedrock{JoinTeamBlue:1,TeamSelect:1,display:{Name:'{"text":"BLUE","color":"blue","bold":true,"italic":false}'},HideFlags:127,CustomModelData:3}
 item modify entity @s enderchest.2 sg:teams/blue
 
-item replace entity @s enderchest.3 with bedrock{JoinTeamDark_Blue:1,TeamSelect:1,display:{Name:'{"text":"DARK BLUE","color":"dark_blue","bold":true,"italic":false}'},HideFlags:127,CustomModelData:5}
-item modify entity @s enderchest.3 sg:teams/dark_blue
+item replace entity @s enderchest.3 with bedrock{JoinTeamCyan:1,TeamSelect:1,display:{Name:'{"text":"CYAN","color":"dark_aqua","bold":true,"italic":false}'},HideFlags:127,CustomModelData:4}
+item modify entity @s enderchest.3 sg:teams/cyan
 
 item replace entity @s enderchest.4 with bedrock{JoinTeamDark_Green:1,TeamSelect:1,display:{Name:'{"text":"DARK GREEN","color":"dark_green","bold":true,"italic":false}'},HideFlags:127,CustomModelData:7}
 item modify entity @s enderchest.4 sg:teams/dark_green
