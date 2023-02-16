@@ -1,4 +1,4 @@
-#called whenever a player joins, leaves, or picks a class
+#called whenever a player joins, leaves, or picks a team
 execute store result score #AquaCount teams if entity @a[team=Aqua]
 execute store result score #BlackCount teams if entity @a[team=Black]
 execute store result score #BlueCount teams if entity @a[team=Blue]

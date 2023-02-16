@@ -8,7 +8,7 @@ execute if score @s lobbySigns matches 3 run function sg:lobby/settings/actions/
 execute if score @s lobbySigns matches 4 run function sg:lobby/settings/actions/unlock/manual
 execute if score @s lobbySigns matches 5 run function sg:lobby/settings/actions/credits/download
 execute if score @s lobbySigns matches 6 run function sg:lobby/settings/actions/credits/trailer
-execute if score @s lobbySigns matches 10 run function sg:lobby/settings/actions/team_size
+execute if score @s lobbySigns matches 10 run function sg:lobby/settings/actions/team_size/click
 execute if score @s lobbySigns matches 11 run function sg:lobby/settings/actions/grace_period
 execute if score @s lobbySigns matches 12 run function sg:lobby/settings/actions/restock_type
 execute if score @s lobbySigns matches 13 run function sg:lobby/settings/actions/map_size
