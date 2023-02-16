@@ -21,3 +21,17 @@ scoreboard players set $SettingsFar.Move lobbyDoor -1
 scoreboard players operation $SettingsFar.State lobbyDoor = #Closed lobbyDoor
 scoreboard players set $TrainingFar.Move lobbyDoor -1
 scoreboard players operation $TrainingFar.State lobbyDoor = #Closed lobbyDoor
+
+#arena recovery doors
+scoreboard players set $ArenaNorthNear.Move lobbyDoor -1
+scoreboard players operation $ArenaNorthNear.State lobbyDoor = #Closed lobbyDoor
+scoreboard players set $ArenaNorthFar.Move lobbyDoor -1
+scoreboard players operation $ArenaNorthFar.State lobbyDoor = #Closed lobbyDoor
+scoreboard players set $ArenaSouthNear.Move lobbyDoor -1
+scoreboard players operation $ArenaSouthNear.State lobbyDoor = #Closed lobbyDoor
+scoreboard players set $ArenaSouthFar.Move lobbyDoor -1
+scoreboard players operation $ArenaSouthFar.State lobbyDoor = #Closed lobbyDoor
+scoreboard players set $ArenaWestNear.Move lobbyDoor -1
+scoreboard players operation $ArenaWestNear.State lobbyDoor = #Closed lobbyDoor
+scoreboard players set $ArenaWestFar.Move lobbyDoor -1
+scoreboard players operation $ArenaWestFar.State lobbyDoor = #Closed lobbyDoor

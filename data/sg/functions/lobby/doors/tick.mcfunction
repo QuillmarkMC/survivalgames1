@@ -37,3 +37,35 @@ execute unless score $SettingsNear.State lobbyDoor = #Locked lobbyDoor at @e[typ
 execute unless score $SettingsFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySettingsFarDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $SettingsFar.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/settings_far/open
 #settings far close
 execute unless score $SettingsFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySettingsFarDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $SettingsFar.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/settings_far/close
+
+
+#arena recovery rooms
+#west far open
+execute unless score $ArenaWestFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyWestFarDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaWestFar.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/west_far/open
+#west far close
+execute unless score $ArenaWestFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyWestFarDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaWestFar.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/west_far/close
+
+#west near open
+execute unless score $ArenaWestNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyWestNearDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaWestNear.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/west_near/open
+#west near close
+execute unless score $ArenaWestNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyWestNearDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaWestNear.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/west_near/close
+
+#north near open
+execute unless score $ArenaNorthNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyNorthNearDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaNorthNear.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/north_near/open
+#north near close
+execute unless score $ArenaNorthNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyNorthNearDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaNorthNear.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/north_near/close
+
+#north far open
+execute unless score $ArenaNorthFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyNorthFarDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaNorthFar.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/north_far/open
+#north far close
+execute unless score $ArenaNorthFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbyNorthFarDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaNorthFar.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/north_far/close
+
+#south near open
+execute unless score $ArenaSouthNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySouthNearDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaSouthNear.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/south_near/open
+#south near close
+execute unless score $ArenaSouthNear.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySouthNearDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaSouthNear.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/south_near/close
+
+#south far open
+execute unless score $ArenaSouthFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySouthFarDoorMarker] if entity @a[gamemode=!spectator,distance=..3] if score $ArenaSouthFar.State lobbyDoor = #Closed lobbyDoor run function sg:lobby/doors/open/south_far/open
+#south far close
+execute unless score $ArenaSouthFar.State lobbyDoor = #Locked lobbyDoor at @e[type=marker,tag=lobbySouthFarDoorMarker] unless entity @a[gamemode=!spectator,distance=..3] if score $ArenaSouthFar.State lobbyDoor = #Open lobbyDoor run function sg:lobby/doors/close/south_far/close

@@ -15,4 +15,6 @@ scoreboard players operation $FireworkFanfare win = $end_firework_total options
 function sg:game/logic/end/fireworks/schedule
 execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 1.5
 
+effect give @a[tag=WinnerWinnerChickenDinner] resistance 999999 10 true
+
 schedule function sg:game/logic/end/transition 160t
