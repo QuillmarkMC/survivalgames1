@@ -3,4 +3,9 @@ setblock -183 16 115 oak_wall_sign[facing=west]{GlowingText:true,Color:"blue",Te
 function sg:lobby/settings/display/unlocked/team_size
 function sg:lobby/settings/display/unlocked/grace_period
 function sg:lobby/settings/display/unlocked/restock_type
+function sg:lobby/settings/display/unlocked/map_size
+function sg:lobby/settings/display/unlocked/border_grace
+function sg:lobby/settings/display/unlocked/border_size
+function sg:lobby/settings/display/unlocked/border_advance
+function sg:lobby/settings/display/unlocked/restock_time
 setblock -183 15 115 dark_oak_wall_sign[facing=west]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 3"},"text": ""}',Text2:'{"text":"Lock Settings","color":"yellow"}',Text3:'{"text":"[Admins Only]","color":"white"}',Text4:""}
