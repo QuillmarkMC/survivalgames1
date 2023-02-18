@@ -8,7 +8,7 @@ title @a[tag=WinnerWinnerChickenDinner] subtitle [{"text": ""},{"text": "Your po
 title @a[tag=WinnerWinnerChickenDinner] title {"color":"#F3DD4F","text":"Victory Royale!","bold": true}
 #not winners
 title @a[tag=!WinnerWinnerChickenDinner] times 5 120 20
-title @a[tag=!WinnerWinnerChickenDinner] subtitle [{"text": ""},{"text": "Your position: ","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
+execute as @a[tag=!WinnerWinnerChickenDinner] run title @s subtitle [{"text": ""},{"text": "Your position: ","color": "white"},{"score":{"name":"@s","objective":"playerPosition"},"color": "green"},{"text": "/","color": "#70D470"},{"score":{"name":"$TotalPlayers","objective":"win"},"color": "#70D470"}]
 title @a[tag=!WinnerWinnerChickenDinner] title {"color":"red","text":"Game Over"}
 
 scoreboard players operation $FireworkFanfare win = $end_firework_total options
