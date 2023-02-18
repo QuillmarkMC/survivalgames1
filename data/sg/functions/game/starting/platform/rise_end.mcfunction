@@ -1,3 +1,5 @@
+#force fix player positions
+execute as @a[tag=SGPlaying] at @s run tp ~ 46.5 ~
 #close hatch
 execute at @a[tag=SGPlaying] run setblock ~ ~ ~ smooth_stone_slab[type=bottom]
 #kill platform entities
