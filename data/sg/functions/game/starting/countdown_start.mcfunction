@@ -4,14 +4,15 @@ scoreboard players operation $state gamestate = $game gamestate
 ##Set up map
 function sg:game/logic/border/set_game
 function sg:game/generate/chests/restock/all
-function sg:game/spawning/summon/all
+#function sg:game/spawning/summon/all
 function sg:game/generate/anvils/place
 #close all hatches
 execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
 #reset total player count
 scoreboard players set $TotalPlayers win 0
 ##Spawn players into map
-function sg:game/spawning/solos/spawn
+#function sg:game/spawning/solos/spawn
+function sg:game/spawning/check_mode
 #execute unless score $MaxTeamSize teams matches 2..3 run function sg:game/spawning/solos/spawn
 #execute if score $MaxTeamSize teams matches 2 run function sg:game/spawning/2s/spawn
 #execute if score $MaxTeamSize teams matches 3 run function sg:game/spawning/3s/spawn
