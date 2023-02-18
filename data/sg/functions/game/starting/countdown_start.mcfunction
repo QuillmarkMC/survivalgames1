@@ -8,7 +8,8 @@ function sg:game/spawning/summon/all
 function sg:game/generate/anvils/place
 #close all hatches
 execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
-
+#reset total player count
+scoreboard players set $TotalPlayers win 0
 ##Spawn players into map
 function sg:game/spawning/solos/spawn
 #execute unless score $MaxTeamSize teams matches 2..3 run function sg:game/spawning/solos/spawn
