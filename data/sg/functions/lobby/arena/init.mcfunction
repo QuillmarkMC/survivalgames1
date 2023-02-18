@@ -26,4 +26,4 @@ summon marker -314.5 16.0 110.5 {Tags:["SGArenaRespawn"],Rotation:[-90.0f,12.0f]
 summon marker -314.5 16.0 104.5 {Tags:["SGArenaRespawn"],Rotation:[-90.0f,12.0f]}
 
 #open respawn point
-fill -274 5 116 -274 6 116 air
+fill -274 4 115 -274 5 115 air

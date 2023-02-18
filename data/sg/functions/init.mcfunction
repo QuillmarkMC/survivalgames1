@@ -175,5 +175,3 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule spectatorsGenerateChunks false
 gamerule sendCommandFeedback false
-
-difficulty easy
