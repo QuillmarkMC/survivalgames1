@@ -1,5 +1,5 @@
-title @a times 0 40 20
-title @a title "\uE001"
+title @s times 0 40 20
+title @s title "\uE001"
 
 tp @s @e[type=marker,tag=SGArenaRespawn,limit=1,sort=random]
 
