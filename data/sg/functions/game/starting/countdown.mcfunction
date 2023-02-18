@@ -5,7 +5,7 @@ execute if score $countdown countdown matches 1..10 run title @a title [{"score"
 execute if score $countdown countdown matches 12.. as @a at @s run playsound sg:game.drum record @s ~ ~ ~ 0.25
 execute if score $countdown countdown matches ..11 as @a at @s run playsound sg:game.drum record @s ~ ~ ~ 0.15
 
-execute if score $countdown countdown matches 19 run schedule function sg:game/starting/countdown_music 17t
+#execute if score $countdown countdown matches 19 run schedule function sg:game/starting/countdown_music 17t
 
 execute if score $countdown countdown matches 15 as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_one/pause
 execute if score $countdown countdown matches 15 as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_two/play
