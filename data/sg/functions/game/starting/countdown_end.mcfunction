@@ -18,9 +18,14 @@ scoreboard players operation @a matchID = $Global matchID
 function timer_survivalgames:remove/all
 
 #bossbar
-scoreboard players set $Timer border 300
+#border delay based on lobby settings
+execute unless score $MapSize options matches 1..2 run scoreboard players set $Timer border 300
+execute if score $MapSize options matches 1 run scoreboard players set $Timer border 120
+execute if score $MapSize options matches 2 run scoreboard players set $Timer border 30
 execute store result bossbar border max run scoreboard players get $Timer border
 bossbar set border visible true
 scoreboard players operation $State border = $Grace border
 function sg:game/logic/border/update
-schedule function sg:game/logic/border/shrink 300s
+execute unless score $MapSize options matches 1..2 run schedule function sg:game/logic/border/shrink 300s
+execute if score $MapSize options matches 1 run schedule function sg:game/logic/border/shrink 120s
+execute if score $MapSize options matches 2 run schedule function sg:game/logic/border/shrink 30s

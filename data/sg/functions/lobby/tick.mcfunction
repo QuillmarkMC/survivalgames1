@@ -23,14 +23,14 @@ execute at @e[type=marker,tag=TeamSelect] as @a[distance=..8] run function sg:lo
 #check door zones
 function sg:lobby/doors/tick
 
-#respawn dead players
-execute as @a[scores={death=1..}] run function sg:lobby/arena/death/death
-execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/arena/death/delay_respawn
-
 #check if a player left the arena without dying
 execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] run function sg:lobby/arena/deserter
 
 #check if player entered arena
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena,gamemode=!spectator] run function sg:lobby/arena/enter
+
+#respawn dead players (place anytime after arena entrance check)
+execute as @a[scores={death=1..}] run function sg:lobby/arena/death/death
+execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/arena/death/delay_respawn
 
 kill @e[type=item]

@@ -14,8 +14,6 @@ effect clear @a
 effect give @a[tag=SGPlaying] weakness 999999 255 true
 effect give @a[tag=SGPlaying] resistance 999999 10 true
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
-#close all hatches
-execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
 
 #prepare platform
 scoreboard players operation $countdown countdown = $platform_delay options

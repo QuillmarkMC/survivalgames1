@@ -1,6 +1,9 @@
 #summon spawn locations
 function sg:game/spawning/summon/all
 
+#close all hatches
+execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] run setblock ~ ~11 ~ smooth_stone_slab[type=bottom]
+
 #reset scoreboards for knowing how many players are at each spot
 scoreboard players set $NextSpawn spawning 0
 scoreboard players set $TotalPlayers win 0
