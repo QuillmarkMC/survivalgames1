@@ -17,4 +17,4 @@ tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"
 execute unless score $MapSize options matches 1..2 run scoreboard players set $Restock timers 300
 execute if score $MapSize options matches 1 run scoreboard players set $Restock timers 360
 execute if score $MapSize options matches 2 run scoreboard players set $Restock timers 270
-schedule function sg:game/logic/restock/timer 1s
+execute unless score $RestockType options matches 2 run schedule function sg:game/logic/restock/timer 1s
