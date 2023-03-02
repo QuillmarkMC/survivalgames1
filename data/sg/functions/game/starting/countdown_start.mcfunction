@@ -30,7 +30,9 @@ scoreboard players add $Global matchID 1
 
 #big timer model
 execute at @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] run function timer_survivalgames:summon/default
-execute as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.rotating/play
+#execute as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.rotating/play
+execute as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_two/play
+execute as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_two/pause
 
 #bossbar
 bossbar set border visible false
