@@ -8,6 +8,7 @@ xp set @s 0 levels
 spawnpoint @s -274 4 115
 tp @s -222.0 15.0625 70.0 0.0 6.7
 scoreboard players reset @s click
+scoreboard players reset @s lobbyArenaRespawn
 tag @s add SGInitSpawned
 tag @s remove SGResetPlayer
 tag @s remove WinnerWinnerChickenDinner

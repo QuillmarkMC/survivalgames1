@@ -1,7 +1,7 @@
 title @s times 0 40 20
 title @s title "\uE001"
 
-tp @s @e[type=marker,tag=SGArenaRespawn,limit=1,sort=random]
+scoreboard players set @s lobbyArenaRespawn 5
 
 tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text": " fainted"}]
 

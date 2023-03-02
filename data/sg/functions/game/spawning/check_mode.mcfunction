@@ -6,6 +6,9 @@ scoreboard players set $NextSpawn spawning 0
 scoreboard players set $TotalPlayers win 0
 
 #check gamemode
-execute if score $MaxTeamSize teams matches 1.. as @a[tag=SGPlaying,sort=random] run function sg:game/spawning/solos/find_me_a_spawn
-#execute if score $TeamSize options matches 2 as @a[tag=SGPlaying,tag=SGNotSpawned,sort=random,limit=1] run function sg:game/spawning/2s/identify_team
-#execute if score $TeamSize options matches 3 as @a[tag=SGPlaying,tag=SGNotSpawned,sort=random,limit=1] run function sg:game/spawning/3s/identify_team
+execute if score $MaxTeamSize teams matches 2.. run tag @a[tag=SGPlaying] add SGNotSpawned
+
+#spawn players based on gamemode
+execute unless score $MaxTeamSize teams matches 2..3 as @a[tag=SGPlaying,sort=random] run function sg:game/spawning/solos/find_me_a_spawn
+execute if score $MaxTeamSize teams matches 2 as @a[tag=SGPlaying,tag=SGNotSpawned,sort=random,limit=1] run function sg:game/spawning/2s/identify_team
+execute if score $MaxTeamSize teams matches 3 as @a[tag=SGPlaying,tag=SGNotSpawned,sort=random,limit=1] run function sg:game/spawning/3s/identify_team

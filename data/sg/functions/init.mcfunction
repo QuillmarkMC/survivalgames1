@@ -52,6 +52,7 @@ scoreboard objectives add lobbyCountdown dummy
 scoreboard objectives add teamSelectTimer dummy
 execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 scoreboard objectives add lobbyArena dummy
+scoreboard objectives add lobbyArenaRespawn dummy
 
 #Game
 scoreboard objectives add spawning dummy
