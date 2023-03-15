@@ -1,1 +1,1 @@
-tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Sorry, this isn't available yet :("}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Click "},{"text":"here","bold": true,"underlined": true,"color": "yellow","hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]},"clickEvent":{"action":"open_url","value":"https://youtu.be/LAmEzFgMVng"}},{"text":" to view the "},{"text": "Ruins of Altrac","color": "gray"},{"text": " map trailer!"}]
