@@ -1,6 +1,3 @@
-#kill @e[tag=SGCornucopiaChest]
-#kill @e[tag=SGRareChest]
-
 #cornucopia
 execute positioned -229 45 115 run summon marker ~ ~ ~ {Tags:["SGChest","SGCornucopiaChest"]}
 execute positioned -228 45 112 run summon marker ~ ~ ~ {Tags:["SGChest","SGCornucopiaChest"]}
@@ -101,3 +98,19 @@ execute positioned 174 57 -17 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareCh
 execute positioned 141 67 -14 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
 execute positioned 124 70 -5 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
 execute positioned 205 62 4 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+#cenote
+execute positioned -619 15 -205 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -623 16 -224 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -633 21 -142 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -647 17 -113 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -621 19 -103 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -609 18 -105 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -586 16 -152 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -602 50 -163 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -602 47 -140 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -604 49 -124 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -639 49 -123 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -640 46 -165 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -632 48 -177 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -643 47 -141 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}
+execute positioned -615 46 -177 run summon marker ~ ~ ~ {Tags:["SGChest","SGRareChest"]}

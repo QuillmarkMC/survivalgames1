@@ -1,5 +1,3 @@
-#kill @e[tag=SGEpicChest]
-
 #epics
 execute positioned -339 75 -3 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -387 74 -48 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
@@ -20,6 +18,14 @@ execute positioned -445 91 449 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicC
 execute positioned -425 91 438 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -420 91 406 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -487 188 464 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -440 64 448 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -433 64 441 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -448 64 448 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -455 64 441 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -455 64 417 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -448 64 410 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -440 64 410 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -433 64 417 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -719 63 614 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -696 -40 304 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -696 -39 298 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
@@ -50,3 +56,19 @@ execute positioned 180 15 -6 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChe
 execute positioned 179 11 30 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned 157 -5 25 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned 148 11 29 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+#cenote
+execute positioned -611 17 -225 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -630 17 -222 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -654 19 -191 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -656 16 -177 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -664 19 -163 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -662 21 -139 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -657 18 -127 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -619 18 -101 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -593 16 -133 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -593 16 -145 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -590 17 -172 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -595 16 -183 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -605 47 -167 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -606 47 -171 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -614 48 -121 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}

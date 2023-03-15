@@ -1,5 +1,3 @@
-#kill @e[tag=SGCommonChest]
-
 #cornucopia
 execute positioned -228 45 126 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned -231 45 123 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
@@ -125,5 +123,7 @@ execute positioned -8 62 333 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonC
 execute positioned -39 62 343 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned -64 61 310 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned -60 62 325 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
+execute positioned -54 61 310 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned 12 60 314 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned 183 70 -19 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
+execute positioned -607 59 -131 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
