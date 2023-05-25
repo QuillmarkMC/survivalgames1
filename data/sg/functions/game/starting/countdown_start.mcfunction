@@ -45,4 +45,4 @@ scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
 #gamerule
 gamerule fallDamage true
 gamerule showDeathMessages true
-difficulty easy
+difficulty hard

@@ -5,6 +5,6 @@ scoreboard players set @s lobbyArenaRespawn 5
 
 tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text": " fainted"}]
 
-tag @s remove SGArenaFighter
+scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
 advancement grant @s only sg:inv_changed
 scoreboard players set @s death 0

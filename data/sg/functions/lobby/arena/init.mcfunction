@@ -5,6 +5,7 @@ execute if score $ArenaState lobbyArena matches 0 positioned -253 15 115 positio
 execute if score $ArenaState lobbyArena matches 1 positioned -253 15 115 positioned ~-39 ~-6 ~-18 run place template sg:arena/lush_cave
 execute if score $ArenaState lobbyArena matches 2 positioned -253 15 115 positioned ~-39 ~-6 ~-18 run place template sg:arena/volcano
 
+kill @e[type=marker,tag=SGArenaRespawn]
 #summon respawn points
 #south
 summon marker -284.5 16.0 156.5 {Tags:["SGArenaRespawn"],Rotation:[180.0f,12.0f]}

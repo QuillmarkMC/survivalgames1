@@ -1,7 +1,8 @@
 #effects
-execute as @a[tag=!SGArenaFighter] run effect give @s minecraft:regeneration 999999 255 true
-execute as @a[tag=!SGArenaFighter] run effect give @s minecraft:resistance 999999 255 true
-execute as @a[tag=!SGArenaFighter] run effect give @s minecraft:weakness 999999 255 true
+execute as @a[tag=!SGArenaFighter] run effect give @s regeneration infinite 255 true
+execute as @a[tag=!SGArenaFighter] run effect give @s resistance infinite 255 true
+execute as @a[tag=!SGArenaFighter] run effect give @s weakness infinite 255 true
+execute as @a[scores={hunger=..19}] run effect give @s saturation 1 0 true
 
 execute as @a if score @s click matches 1.. run function sg:lobby/inventory/click
 
@@ -32,5 +33,8 @@ execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena,gamemode=!spectator] 
 #respawn dead players (place anytime after arena entrance check)
 execute as @a[scores={death=1..}] run function sg:lobby/arena/death/death
 execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/arena/death/delay_respawn
+
+#tick archery minigame
+function sg:lobby/archery/tick
 
 kill @e[type=item]

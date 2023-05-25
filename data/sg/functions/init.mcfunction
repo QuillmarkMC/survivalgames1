@@ -17,6 +17,9 @@ scoreboard players set $initial_border_grace options 600
 execute unless score $StartMusic options matches 0.. run scoreboard players set $StartMusic options 0
 scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2
+scoreboard objectives add math dummy
+scoreboard players set #2 math 2
+scoreboard players set #60 math 60
 #detect leavers
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 #match ID for handling DCs
@@ -42,6 +45,10 @@ scoreboard players set $Team.Magenta teamID 13
 scoreboard players set $Team.Red teamID 14
 scoreboard players set $Team.White teamID 15
 scoreboard players set $Team.Yellow teamID 16
+scoreboard objectives add inventoryState dummy
+scoreboard players set $Lobby.Default inventoryState 1
+scoreboard players set $Lobby.ArenaFighter inventoryState 2
+scoreboard players set $Lobby.Archery inventoryState 3
 scoreboard objectives add teams dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
@@ -53,6 +60,12 @@ scoreboard objectives add teamSelectTimer dummy
 execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 scoreboard objectives add lobbyArena dummy
 scoreboard objectives add lobbyArenaRespawn dummy
+scoreboard objectives add hunger food
+scoreboard objectives add archeryQueuePosition dummy
+scoreboard objectives add archeryRecord dummy
+scoreboard objectives add archeryVar dummy
+scoreboard objectives add archeryZombieSpawnDelay dummy
+scoreboard objectives add archeryHighscore dummy
 
 #Game
 scoreboard objectives add spawning dummy

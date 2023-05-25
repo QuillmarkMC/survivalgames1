@@ -2,9 +2,7 @@ title @a times 20 40 20
 title @a title "\uE001"
 
 #unload lobby
-scoreboard players set $Count lobbyCountdown -1
-kill @e[type=armor_stand,tag=TeamSelectName]
-function sg:lobby/arena/uninit
+function sg:lobby/unload
 
 execute as @a[team=Random] run function sg:lobby/team_select/random/check
 team join Spectator @a[team=]
