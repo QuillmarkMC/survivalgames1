@@ -3,6 +3,7 @@ ride @s mount @e[type=armor_stand,tag=SGArcherySeat,limit=1]
 #tag player
 tag @s add SGArcheryPlayer
 scoreboard players reset @s archeryQueuePosition
+execute unless score @s archeryHighscore matches 0.. run scoreboard players set @s archeryHighscore 0
 #countdown
 scoreboard players set $Countdown archeryVar 3
 function sg:lobby/archery/countdown/count
