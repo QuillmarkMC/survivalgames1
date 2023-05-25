@@ -54,10 +54,8 @@ scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add lobbyDoor dummy
 scoreboard objectives add lobbySigns trigger
-execute if score $state gamestate = $lobby gamestate run function sg:lobby/settings/init
 scoreboard objectives add lobbyCountdown dummy
 scoreboard objectives add teamSelectTimer dummy
-execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 scoreboard objectives add lobbyArena dummy
 scoreboard objectives add lobbyArenaRespawn dummy
 scoreboard objectives add hunger food
@@ -82,6 +80,8 @@ scoreboard objectives add temple dummy
 scoreboard objectives add openChest minecraft.custom:open_chest
 
 function sg:game/logic/border/init_bossbar
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/settings/init
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 
 ##Forceload
 #cornucopia
