@@ -2,7 +2,7 @@ tellraw @s [{"text": ""},{"text":"GG! You got a score of ","color":"gold"},{"sco
 scoreboard players set $Countdown archeryVar -1
 execute if score $CurrentScore archeryVar > @s archeryHighscore run function sg:lobby/archery/gameplay/scores/personal_best
 tp @s -229.5 15.0 180.5 90.0 6.5
-kill @e[type=husk,tag=SGArcheryTarget]
+kill @e[type=zombified_piglin,tag=SGArcheryTarget]
 
 #inventory
 scoreboard players operation @s inventoryState = $Lobby.Default inventoryState

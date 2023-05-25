@@ -1,4 +1,5 @@
 #tp player
+tp @s @e[type=armor_stand,tag=SGArcherySeat,limit=1]
 ride @s mount @e[type=armor_stand,tag=SGArcherySeat,limit=1]
 #tag player
 tag @s add SGArcheryPlayer
