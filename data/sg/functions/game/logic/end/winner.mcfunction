@@ -1,4 +1,6 @@
 tag @a[tag=SGPlaying,gamemode=adventure] add WinnerWinnerChickenDinner
+#tag winners to get VIP lobby access, persists through resets
+tag @a[tag=WinnerWinnerChickenDinner] add VictoryRoyale
 
 tellraw @a [{"text":"[!] ","color":"yellow","bold": true},{"text":"Congratulations to ","color": "white","bold": false},{"text":"","extra":[{"selector":"@a[tag=WinnerWinnerChickenDinner]"}],"bold": false},{"text": "!","bold": false}]
 
@@ -15,6 +17,6 @@ scoreboard players operation $FireworkFanfare win = $end_firework_total options
 function sg:game/logic/end/fireworks/schedule
 execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 1.5
 
-effect give @a[tag=WinnerWinnerChickenDinner] resistance 999999 10 true
+effect give @a[tag=WinnerWinnerChickenDinner] resistance infinite 10 true
 
 schedule function sg:game/logic/end/transition 160t

@@ -11,8 +11,8 @@ scoreboard players set $TotalPlayers win 0
 function sg:game/spawning/check_mode
 clear @a
 effect clear @a
-effect give @a[tag=SGPlaying] weakness 999999 255 true
-effect give @a[tag=SGPlaying] resistance 999999 10 true
+effect give @a[tag=SGPlaying] weakness infinite 255 true
+effect give @a[tag=SGPlaying] resistance infinite 10 true
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 
 #prepare platform
