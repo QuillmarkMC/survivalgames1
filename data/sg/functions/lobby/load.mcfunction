@@ -12,3 +12,4 @@ function sg:lobby/doors/init
 function sg:lobby/settings/display/update
 function sg:lobby/arena/init
 function sg:lobby/archery/init
+function sg:lobby/training/spawn_weapons_rack
