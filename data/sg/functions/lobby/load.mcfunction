@@ -1,5 +1,7 @@
 scoreboard players operation $state gamestate = $lobby gamestate
 scoreboard players set $Count lobbyCountdown -1
+scoreboard players reset * adminTeleportCooldown
+scoreboard players set $Cooldown adminTeleportCooldown 200
 schedule clear sg:lobby/countdown
 
 gamerule fallDamage false

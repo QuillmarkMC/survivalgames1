@@ -19,6 +19,7 @@ scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
+scoreboard players set #20 math 20
 scoreboard players set #60 math 60
 #detect leavers
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
@@ -64,6 +65,7 @@ scoreboard objectives add archeryRecord dummy
 scoreboard objectives add archeryVar dummy
 scoreboard objectives add archeryZombieSpawnDelay dummy
 scoreboard objectives add archeryHighscore dummy
+scoreboard objectives add adminTeleportCooldown dummy
 
 #Game
 scoreboard objectives add spawning dummy

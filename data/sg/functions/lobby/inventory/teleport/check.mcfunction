@@ -1,0 +1,2 @@
+execute unless score @s adminTeleportCooldown matches 1.. run function sg:lobby/inventory/teleport/success
+execute if score @s adminTeleportCooldown matches 1.. run function sg:lobby/inventory/teleport/fail
