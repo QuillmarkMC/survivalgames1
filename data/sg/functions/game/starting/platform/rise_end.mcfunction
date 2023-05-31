@@ -8,7 +8,7 @@ schedule function sg:game/starting/platform/delay_kill 2t
 #effects
 effect clear @a[tag=SGPlaying] levitation
 #sound
-tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The game will begin in 30 seconds!"}]
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The game will begin in 15 seconds!"}]
 
 #execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 #scoreboard players set $Heartbeat countdown 2

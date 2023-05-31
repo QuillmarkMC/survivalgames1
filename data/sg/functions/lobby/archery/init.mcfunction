@@ -43,7 +43,6 @@ function sg:lobby/archery/queue/text_display
 
 execute unless score $Global archeryHighscore matches 0.. run scoreboard players set $Global archeryHighscore 0
 
-execute unless score $Global archeryRecord matches 1.. run scoreboard players set $Global archeryRecord 0
 scoreboard players set $MaxLength archeryVar 60
 scoreboard players set $Timer archeryVar -1
 

@@ -61,7 +61,6 @@ scoreboard objectives add lobbyArena dummy
 scoreboard objectives add lobbyArenaRespawn dummy
 scoreboard objectives add hunger food
 scoreboard objectives add archeryQueuePosition dummy
-scoreboard objectives add archeryRecord dummy
 scoreboard objectives add archeryVar dummy
 scoreboard objectives add archeryZombieSpawnDelay dummy
 scoreboard objectives add archeryHighscore dummy
