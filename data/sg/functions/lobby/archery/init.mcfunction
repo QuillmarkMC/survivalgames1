@@ -1,19 +1,18 @@
 kill @e[type=marker,tag=SGArcheryZombieSpawn]
 kill @e[type=armor_stand,tag=SGArcherySeat]
 #summon markers for zombie spawn points
-summon marker -239 20 188 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -244 20 186 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -252 20 186 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -238.5 20.0 186.0 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -243.5 20 186.0 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -251.5 20 186.0 {Tags:["SGArcheryZombieSpawn"]}
 summon marker -248 18 179 {Tags:["SGArcheryZombieSpawn"]}
 summon marker -250 15 183 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -246 15 187 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -255 15 186 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -252 15 176 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -254.5 15 184.5 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -252 15 175.5 {Tags:["SGArcheryZombieSpawn"]}
 summon marker -254 15 173 {Tags:["SGArcheryZombieSpawn"]}
 summon marker -247 15 173 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -239 21 172 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -248 21 173 {Tags:["SGArcheryZombieSpawn"]}
-summon marker -255 21 176 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -238.5 21 173.9 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -248 21 174.0 {Tags:["SGArcheryZombieSpawn"]}
+summon marker -252.0 21 177.0 {Tags:["SGArcheryZombieSpawn"]}
 scoreboard players set @e[type=marker,tag=SGArcheryZombieSpawn] archeryZombieSpawnDelay 0
 
 #summon armor stand to be ridden
