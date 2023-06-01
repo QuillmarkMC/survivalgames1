@@ -1,9 +1,6 @@
 gamemode adventure @s
 team leave @s
-clear @s
 effect clear @s
-scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
-advancement grant @s only sg:inv_changed
 xp set @s 0 points
 xp set @s 0 levels
 spawnpoint @s -274 4 115
@@ -17,6 +14,9 @@ tag @s remove WinnerWinnerChickenDinner
 tag @s remove SGPlaying
 tag @s remove SGNotSpawned
 tag @s remove SGArcheryPlayer
+scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
+clear @s
+advancement grant @s only sg:inv_changed
 #bossbar set archery players @a[tag=SGArcheryPlayer,limit=1]
 
 #state-based reset
