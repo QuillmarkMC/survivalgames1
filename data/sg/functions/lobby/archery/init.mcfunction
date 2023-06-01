@@ -42,9 +42,9 @@ summon text_display -231.5 17.5 165.5 {Tags:["SGArcheryQueueDisplay"],alignment:
 function sg:lobby/archery/queue/text_display
 
 execute unless score $Global archeryHighscore matches 0.. run scoreboard players set $Global archeryHighscore 0
-
 scoreboard players set $MaxLength archeryVar 60
 scoreboard players set $Timer archeryVar -1
+scoreboard players set $GameInProgress archeryVar 0
 
 bossbar add archery ""
 bossbar set archery visible true

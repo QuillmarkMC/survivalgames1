@@ -1,3 +1,6 @@
+#debug message
+execute if score $Debug options matches 1.. run say lobby/archery/end
+
 tellraw @s [{"text": ""},{"text":"[!] ","color":"light_purple","bold": true},{"text":"GG! You got a score of ","color":"white"},{"score":{"name":"$CurrentScore","objective":"archeryVar"},"color":"gold"},{"text": "!","color": "gold"}]
 scoreboard players set $Countdown archeryVar -1
 execute if score $CurrentScore archeryVar > @s archeryHighscore run function sg:lobby/archery/gameplay/scores/personal_best

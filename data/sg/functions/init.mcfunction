@@ -8,6 +8,7 @@ execute unless score $TimerModelInstall gamestate matches 1.. run function sg:in
 
 #General
 scoreboard objectives add options dummy
+execute unless score $Debug options matches 0.. run scoreboard players set $Debug options 0
 scoreboard players set $lobby_countdown options 10
 scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
