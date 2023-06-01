@@ -8,8 +8,9 @@ title @s title {"color":"dark_red","text":"You Died."}
 scoreboard players set @s combatTimer 0
 
 function sg:game/spawning/spectator/join
-function sg:game/logic/death/location
+#function sg:game/logic/death/location
+scoreboard players set @s deathDelayTimer 1
 #execute at @s run function sg:game/logic/lightning/summon
-execute at @s run playsound entity.wither.death record @s ~ ~ ~ 1 1
+#execute at @s run playsound entity.wither.death record @s ~ ~ ~ 1 1
 function sg:game/logic/check_win/check
 scoreboard players set @s death 0

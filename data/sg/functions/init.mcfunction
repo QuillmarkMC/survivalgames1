@@ -69,6 +69,7 @@ scoreboard objectives add adminTeleportCooldown dummy
 #Game
 scoreboard objectives add spawning dummy
 scoreboard objectives add death deathCount
+scoreboard objectives add deathDelayTimer dummy
 scoreboard objectives add combatTimer dummy
 scoreboard players set $CombatCooldown options 100
 scoreboard objectives add win dummy

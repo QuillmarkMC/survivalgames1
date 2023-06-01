@@ -1,4 +1,2 @@
-tellraw @a [{"text": ""},{"text":"[!] ","color":"aqua","bold": true},{"text":"Start command executed! Game will begin in 10 seconds."}]
-scoreboard players operation $Count lobbyCountdown = $lobby_countdown options
-#check total number of players, warning if more than max
-function sg:lobby/countdown
+#redundant function, just included for easy access by admins
+function sg:lobby/start_logic/begin

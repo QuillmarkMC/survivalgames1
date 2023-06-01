@@ -17,6 +17,8 @@ function sg:lobby/archery/gameplay/timer/display
 bossbar set archery players @s
 #reset score
 scoreboard players set $CurrentScore archeryVar 0
+#minigame state
+scoreboard players set $GameInProgress archeryVar 1
 
 tellraw @s [{"text": ""},{"text":"[!] ","color":"light_purple","bold": true},{"text":"You have 1 minute to shoot as many enemies as possible. Good luck!"}]
 title @s actionbar ""

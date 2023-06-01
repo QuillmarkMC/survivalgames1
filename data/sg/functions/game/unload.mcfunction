@@ -13,6 +13,7 @@ schedule clear sg:game/logic/restock/timer
 stopsound @a * sg:game.music.countdown
 
 scoreboard players reset * combatTimer
+scoreboard players reset * deathDelayTimer
 scoreboard players set $countdown countdown 0
 scoreboard players set $Heartbeat countdown 0
 

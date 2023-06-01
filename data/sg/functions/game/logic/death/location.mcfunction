@@ -11,3 +11,7 @@ data modify entity @e[type=marker,tag=SGTempDeathMarker,limit=1] Pos set from st
 #tp and clean
 tp @s @e[tag=SGTempDeathMarker,type=marker,limit=1]
 kill @e[tag=SGTempDeathMarker,type=marker,limit=1]
+scoreboard players reset @s deathDelayTimer
+
+#playsound
+execute at @s run playsound entity.wither.death record @s ~ ~ ~ 1 1

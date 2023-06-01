@@ -1,5 +1,7 @@
 #Death check
-execute as @a if score @s death matches 1.. run function sg:game/logic/death/death
+execute as @a[scores={deathDelayTimer=0}] run function sg:game/logic/death/location
+execute as @a[scores={deathDelayTimer=1..}] run scoreboard players remove @s deathDelayTimer 1
+execute as @a[scores={death=1..}] run function sg:game/logic/death/death
 
 #check win condition when players dc
 execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemode=adventure]

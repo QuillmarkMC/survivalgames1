@@ -11,6 +11,7 @@ advancement grant @s only sg:inv_changed
 tag @s remove SGArcheryPlayer
 bossbar set archery players
 schedule clear sg:lobby/archery/gameplay/timer/update
+scoreboard players set $GameInProgress archeryVar 0
 
 function sg:lobby/archery/queue/advance
 advancement revoke @s only sg:lobby/archery_lose

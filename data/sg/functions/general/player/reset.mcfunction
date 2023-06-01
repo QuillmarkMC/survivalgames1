@@ -17,6 +17,7 @@ tag @s remove WinnerWinnerChickenDinner
 tag @s remove SGPlaying
 tag @s remove SGNotSpawned
 tag @s remove SGArcheryPlayer
+#bossbar set archery players @a[tag=SGArcheryPlayer,limit=1]
 
 #state-based reset
 execute if score $state gamestate = $game gamestate run team join Spectator

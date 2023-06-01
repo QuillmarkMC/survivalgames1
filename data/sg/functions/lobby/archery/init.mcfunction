@@ -21,7 +21,7 @@ summon armor_stand -238.5 13.8 180.5 {Tags:["SGArcherySeat"],Rotation:[90.0f,0.0
 
 #end game and reset queue
 execute as @a[tag=SGArcheryPlayer] run function sg:lobby/archery/end
-execute as @a[scores={archeryQueuePosition=1..}] run function sg:lobby/archery/queue/leave
+execute as @a[scores={archeryQueuePosition=0..}] run function sg:lobby/archery/queue/leave
 
 #reset queue
 scoreboard players set $NextPosition archeryQueuePosition 0
