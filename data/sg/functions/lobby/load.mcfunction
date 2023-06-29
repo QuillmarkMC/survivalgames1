@@ -6,6 +6,7 @@ schedule clear sg:lobby/countdown
 
 gamerule fallDamage false
 gamerule showDeathMessages false
+gamerule naturalRegeneration true
 difficulty easy
 
 function sg:lobby/markers/summon
@@ -18,3 +19,4 @@ function sg:lobby/archery/init
 function sg:lobby/training/spawn_weapons_rack
 function sg:lobby/settings/teleporters/summon
 function sg:lobby/1v1/init
+function sg:general/teams/friendly_fire_on

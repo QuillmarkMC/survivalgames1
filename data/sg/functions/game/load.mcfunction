@@ -45,4 +45,6 @@ scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
 #gamerule
 gamerule fallDamage true
 gamerule showDeathMessages true
+execute if score $UHC options matches 1 run gamerule naturalRegeneration false
 difficulty hard
+function sg:general/teams/friendly_fire_off

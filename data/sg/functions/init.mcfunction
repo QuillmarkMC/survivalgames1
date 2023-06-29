@@ -123,52 +123,36 @@ forceload add 229 613 282 -376
 ##Teams
 team add Aqua
 team modify Aqua color aqua
-team modify Aqua friendlyFire false
 team add Black
 team modify Black color black
-team modify Black friendlyFire false
 team add Blue
 team modify Blue color blue
-team modify Blue friendlyFire false
 team add Cyan
 team modify Cyan color dark_aqua
-team modify Cyan friendlyFire false
 team add Dark_Blue
 team modify Dark_Blue color dark_blue
-team modify Dark_Blue friendlyFire false
 team add Dark_Gray
 team modify Dark_Gray color dark_gray
-team modify Dark_Gray friendlyFire false
 team add Dark_Green
 team modify Dark_Green color dark_green
-team modify Dark_Green friendlyFire false
 team add Purple
 team modify Purple color dark_purple
-team modify Purple friendlyFire false
 team add Dark_Red
 team modify Dark_Red color dark_red
-team modify Dark_Red friendlyFire false
 team add Gold
 team modify Gold color gold
-team modify Gold friendlyFire false
 team add Gray
 team modify Gray color gray
-team modify Gray friendlyFire false
 team add Green
 team modify Green color green
-team modify Green friendlyFire false
 team add Magenta
 team modify Magenta color light_purple
-team modify Magenta friendlyFire false
 team add Red
 team modify Red color red
-team modify Red friendlyFire false
 team add White
 team modify White color white
-team modify White friendlyFire false
 team add Yellow
 team modify Yellow color yellow
-team modify Yellow friendlyFire false
 team add Solo
 team add Ready
 team modify Ready color dark_green
@@ -198,7 +182,6 @@ gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
 gamerule mobGriefing false
-gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule spectatorsGenerateChunks false

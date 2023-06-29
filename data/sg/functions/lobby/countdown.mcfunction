@@ -7,6 +7,5 @@ execute if score $countdown_mod lobbyCountdown matches 0 unless score $Count lob
 execute if score $Count lobbyCountdown matches 1 as @a at @s run playsound block.note_block.hat record @s ~ ~ ~ 1 0.8
 
 execute if score $Count lobbyCountdown matches 1.. run schedule function sg:lobby/countdown 1s replace
-#execute if score $countdown lobbyCountdown matches 0 run function sg:game/starting/countdown_start
 execute if score $Count lobbyCountdown matches 0 as @a at @s run playsound sg:games.begin record @s
 execute if score $Count lobbyCountdown matches 0 run schedule function sg:lobby/countdown_end 70t
