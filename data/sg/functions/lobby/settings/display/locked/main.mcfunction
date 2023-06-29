@@ -8,4 +8,6 @@ function sg:lobby/settings/display/locked/border_grace
 function sg:lobby/settings/display/locked/border_size
 function sg:lobby/settings/display/locked/border_advance
 function sg:lobby/settings/display/locked/restock_time
+function sg:lobby/settings/display/locked/loot_mode
+function sg:lobby/settings/display/locked/uhc
 setblock -183 15 115 oak_wall_sign[facing=west]{front_text:{messages:['{"clickEvent":{"action":"run_command","value": "/trigger lobbySigns set 1004"},"text": ""}', '{"text":"Unlock Settings","color":"yellow"}', '{"text":"[Admins Only]","color":"white"}', '{"text":""}'], has_glowing_text: true, color: "blue"}}
