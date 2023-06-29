@@ -25,7 +25,7 @@ execute at @e[type=marker,tag=TeamSelect] as @a[distance=..8] run function sg:lo
 function sg:lobby/doors/tick
 
 #check if a player left the arena without dying
-execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] run function sg:lobby/arena/deserter
+execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] unless score @s death matches 1.. run function sg:lobby/arena/deserter
 
 #check if player entered arena
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena,gamemode=!spectator] run function sg:lobby/arena/enter
