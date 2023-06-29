@@ -3,7 +3,7 @@ tag @a[tag=SG1v1Preparing,limit=2] add SG1v1Arena1
 tag @a[tag=SG1v1Preparing,limit=2] remove SG1v1Preparing
 tag @a[tag=SG1v1Arena1,limit=1] add SG1v1Player1Arena1
 tag @a[tag=SG1v1Arena1,tag=!SG1v1Player1Arena1,limit=1] add SG1v1Player2Arena1
-scoreboard players reset @a[tag=SG1v1Preparing,limit=2] 1v1QueuePosition
+scoreboard players reset @a[tag=SG1v1Arena1,limit=2] 1v1QueuePosition
 execute as @a[tag=SG1v1Arena1,limit=2] unless score @s 1v1Killstreak matches 0.. run scoreboard players set @s 1v1Killstreak 0
 execute as @a[tag=SG1v1Arena1,limit=2] unless score @s 1v1Highscore matches 0.. run scoreboard players set @s 1v1Highscore 0
 
