@@ -5,3 +5,4 @@ execute at @s run playsound entity.enderman.teleport record @a ~ ~ ~
 execute at @s run particle reverse_portal ~ ~1 ~ 0 0.5 0 2 100
 
 scoreboard players operation @s adminTeleportCooldown = $Cooldown adminTeleportCooldown
+function sg:lobby/effects/give

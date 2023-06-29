@@ -2,8 +2,10 @@
 #execute as @a[tag=SGPlaying] at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 execute as @a[tag=SGPlaying] at @s run playsound sg:game.platform.rise record @s ~ ~ ~ 0.8
 #levitation
-execute as @a[tag=SGPlaying] at @s run tp @s ~ 35.0 ~ ~ ~
-effect give @a[tag=SGPlaying] levitation 999999 0 true
+#execute as @a[tag=SGPlaying] at @s run tp @s ~ 35.0 ~ ~ ~
+#effect give @a[tag=SGPlaying] levitation 999999 0 true
+execute as @a[tag=SGPlaying] at @s run ride @s mount @e[type=shulker,sort=nearest,tag=SGPlatform,limit=1]
+
 #reset rise timer
 scoreboard players operation $PlatformRise spawning = $platform_rise_time options
 #start ticking platform tp (delay by 3 ticks) schedule

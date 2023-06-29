@@ -1,4 +1,5 @@
 #force fix player positions
+execute as @a[tag=SGPlaying] run ride @s dismount
 execute as @a[tag=SGPlaying] at @s run tp ~ 46.5 ~
 #close hatch
 execute at @a[tag=SGPlaying] run setblock ~ ~ ~ smooth_stone_slab[type=bottom]
@@ -6,7 +7,7 @@ execute at @a[tag=SGPlaying] run setblock ~ ~ ~ smooth_stone_slab[type=bottom]
 execute as @e[type=armor_stand,tag=SGPlatform] at @s run tp ~ -100 ~
 schedule function sg:game/starting/platform/delay_kill 2t
 #effects
-effect clear @a[tag=SGPlaying] levitation
+#effect clear @a[tag=SGPlaying] levitation
 #sound
 tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The game will begin in 15 seconds!"}]
 
