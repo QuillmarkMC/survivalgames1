@@ -13,6 +13,7 @@ advancement grant @a[tag=SG1v1Arena1,limit=2] only sg:inv_changed
 
 tp @a[tag=SG1v1Player1Arena1,limit=1] -211.0 15.0 162.0 0.0 5.0
 tp @a[tag=SG1v1Player2Arena1,limit=1] -211.0 15.0 175.0 180.0 5.0
+execute as @a[tag=SG1v1Arena1,limit=2] at @s run playsound entity.experience_orb.pickup record @s ~ ~ ~ 1 2
 
 bossbar set 1v1arena1 players
 scoreboard players set $Arena1State 1v1Var 0
