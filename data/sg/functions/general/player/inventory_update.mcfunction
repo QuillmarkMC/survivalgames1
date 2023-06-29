@@ -9,6 +9,7 @@ execute if score $state gamestate = $lobby gamestate if entity @s[tag=teamSelect
 execute if score $state gamestate = $lobby gamestate if score @s inventoryState = $Lobby.Default inventoryState run function sg:lobby/inventory/refresh
 execute if score $state gamestate = $lobby gamestate if score @s inventoryState = $Lobby.ArenaFighter inventoryState run function sg:lobby/arena/inventory
 execute if score $state gamestate = $lobby gamestate if score @s inventoryState = $Lobby.Archery inventoryState run function sg:lobby/archery/inventory/check_state
+execute if score $state gamestate = $lobby gamestate if score @s inventoryState = $Lobby.1v1 inventoryState run function sg:lobby/1v1/inventory
 
 tag @s remove teamSelectDetect
 advancement revoke @s only sg:inv_changed

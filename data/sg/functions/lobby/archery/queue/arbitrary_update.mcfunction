@@ -1,3 +1,4 @@
+#recursive clusterfuck
 #called every tick to determine if a player unexpectedly left the queue for whatever reason
 execute unless score $TempQueueCount archeryQueuePosition matches -1 run scoreboard players add $TempQueueCount archeryQueuePosition 1
 execute if score $TempQueueCount archeryQueuePosition matches -1 run scoreboard players set $TempQueueCount archeryQueuePosition 0

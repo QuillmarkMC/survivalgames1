@@ -5,3 +5,4 @@ execute if score $GameInProgress archeryVar matches 1 unless entity @a[tag=SGArc
 execute as @a[scores={archeryQueuePosition=0..},predicate=!sg:lobby/archery_queue_waiting] run function sg:lobby/archery/queue/leave
 execute as @a[scores={archeryQueuePosition=0..},predicate=sg:lobby/archery_queue_waiting] run function sg:lobby/archery/queue/display
 execute as @a[predicate=sg:lobby/archery_queue] run function sg:lobby/archery/queue/enter
+function sg:lobby/archery/queue/arbitrary_update

@@ -16,3 +16,4 @@ function sg:lobby/arena/init
 function sg:lobby/archery/init
 function sg:lobby/training/spawn_weapons_rack
 function sg:lobby/settings/teleporters/summon
+function sg:lobby/1v1/init

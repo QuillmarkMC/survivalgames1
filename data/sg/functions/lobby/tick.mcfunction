@@ -36,6 +36,8 @@ execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/arena/death/
 
 #tick archery minigame
 function sg:lobby/archery/tick
+#tick 1v1 minigame
+function sg:lobby/1v1/tick
 
 #admin teleporter cooldown
 execute as @a[scores={adminTeleportCooldown=1..}] run scoreboard players remove @s adminTeleportCooldown 1

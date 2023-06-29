@@ -51,6 +51,7 @@ scoreboard objectives add inventoryState dummy
 scoreboard players set $Lobby.Default inventoryState 1
 scoreboard players set $Lobby.ArenaFighter inventoryState 2
 scoreboard players set $Lobby.Archery inventoryState 3
+scoreboard players set $Lobby.1v1 inventoryState 4
 scoreboard objectives add teams dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
@@ -66,6 +67,12 @@ scoreboard objectives add archeryVar dummy
 scoreboard objectives add archeryZombieSpawnDelay dummy
 scoreboard objectives add archeryHighscore dummy
 scoreboard objectives add adminTeleportCooldown dummy
+scoreboard objectives add 1v1QueuePosition dummy
+scoreboard objectives add 1v1Var dummy
+scoreboard objectives add 1v1Killstreak dummy
+scoreboard objectives add 1v1Highscore dummy
+scoreboard objectives add 1v1Kill playerKillCount
+scoreboard objectives add surrender trigger
 
 #Game
 scoreboard objectives add spawning dummy
@@ -179,7 +186,7 @@ gamerule doLimitedCrafting false
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
-gamerule doTileDrops true
+gamerule doTileDrops false
 gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule drowningDamage true
