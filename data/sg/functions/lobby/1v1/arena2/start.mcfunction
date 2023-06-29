@@ -8,6 +8,7 @@ execute as @a[tag=SG1v1Arena2,limit=2] unless score @s 1v1Killstreak matches 0..
 execute as @a[tag=SG1v1Arena2,limit=2] unless score @s 1v1Highscore matches 0.. run scoreboard players set @s 1v1Highscore 0
 
 scoreboard players reset @a[tag=SG1v1Arena2,limit=2] 1v1Kill
+execute as @a[tag=SG1v1Arena2,limit=2] run function sg:lobby/effects/clear
 
 #generate
 function sg:lobby/1v1/arena2/generate/advance_selection

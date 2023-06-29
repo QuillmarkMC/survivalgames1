@@ -26,9 +26,9 @@ tag @s remove SG1v1Arena2
 scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
 clear @s
 advancement grant @s only sg:inv_changed
-#bossbar set archery players @a[tag=SGArcheryPlayer,limit=1]
 
 #state-based reset
+execute if score $state gamestate = $lobby gamestate run function sg:lobby/effects/give
 execute if score $state gamestate = $game gamestate run team join Spectator
 execute if score $state gamestate = $game gamestate run gamemode spectator
 execute if score $state gamestate = $game gamestate run tp @s @e[tag=SGSpectatorSpawnMarker,limit=1]

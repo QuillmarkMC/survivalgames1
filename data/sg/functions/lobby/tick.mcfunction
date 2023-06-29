@@ -1,7 +1,7 @@
 #effects
-execute as @a[tag=!SGArenaFighter] run effect give @s regeneration infinite 255 true
-execute as @a[tag=!SGArenaFighter] run effect give @s resistance infinite 255 true
-execute as @a[tag=!SGArenaFighter] run effect give @s weakness infinite 255 true
+#execute as @a[tag=!SGArenaFighter] run effect give @s regeneration infinite 255 true
+#execute as @a[tag=!SGArenaFighter] run effect give @s resistance infinite 255 true
+#execute as @a[tag=!SGArenaFighter] run effect give @s weakness infinite 255 true
 execute as @a[scores={hunger=..19}] run effect give @s saturation 1 0 true
 
 execute as @a if score @s click matches 1.. run function sg:lobby/inventory/click

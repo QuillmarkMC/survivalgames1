@@ -18,6 +18,7 @@ kill @e[type=text_display,tag=SG1v1QueueDisplay]
 summon text_display -211.0 17.5 168.5 {Tags:["SG1v1QueueDisplay"],alignment:"center",text:"",billboard:"center",background:0}
 function sg:lobby/1v1/queue/text_display
 
+scoreboard players set $MaxLength 1v1Var 90
 bossbar add 1v1arena1 ""
 bossbar set 1v1arena1 visible true
 bossbar set 1v1arena1 color yellow

@@ -2,6 +2,7 @@ title @s times 0 40 20
 title @s title "\uE001"
 
 scoreboard players set @s lobbyArenaRespawn 5
+function sg:lobby/effects/give
 
 tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text": " fainted"}]
 
