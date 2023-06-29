@@ -4,7 +4,7 @@ effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
 spawnpoint @s -274 4 115
-tp @s -222.0 15.0625 70.0 0.0 6.7
+tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1]
 scoreboard players reset @s click
 scoreboard players reset @s lobbyArenaRespawn
 scoreboard players reset @s archeryQueuePosition

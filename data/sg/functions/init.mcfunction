@@ -73,6 +73,10 @@ scoreboard objectives add 1v1Killstreak dummy
 scoreboard objectives add 1v1Highscore dummy
 scoreboard objectives add 1v1Kill playerKillCount
 scoreboard objectives add surrender trigger
+scoreboard objectives add respawnLocation dummy
+scoreboard players set $Lobby.Default respawnLocation 1
+scoreboard players set $Lobby.Arena respawnLocation 2
+scoreboard players set $Lobby.1v1 respawnLocation 3
 
 #Game
 scoreboard objectives add spawning dummy

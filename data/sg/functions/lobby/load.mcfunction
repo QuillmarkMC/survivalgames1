@@ -8,6 +8,7 @@ gamerule fallDamage false
 gamerule showDeathMessages false
 difficulty easy
 
+function sg:lobby/markers/summon
 function sg:lobby/team_select/init
 function sg:game/logic/border/set_lobby
 function sg:lobby/doors/init
