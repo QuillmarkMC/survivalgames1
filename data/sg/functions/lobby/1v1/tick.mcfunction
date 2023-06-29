@@ -8,5 +8,5 @@ execute if score $Arena2State 1v1Var matches 3 run function sg:lobby/1v1/arena2/
 
 execute as @a[scores={1v1QueuePosition=0..},predicate=!sg:lobby/1v1_queue_waiting] run function sg:lobby/1v1/queue/leave
 execute as @a[scores={1v1QueuePosition=0..},predicate=sg:lobby/1v1_queue_waiting] run function sg:lobby/1v1/queue/display
-execute as @a[predicate=sg:lobby/archery_queue] run function sg:lobby/1v1/queue/enter
+execute as @a[predicate=sg:lobby/1v1_queue] run function sg:lobby/1v1/queue/enter
 function sg:lobby/1v1/queue/arbitrary_update

@@ -24,6 +24,7 @@ execute as @a[scores={archeryQueuePosition=0..}] run function sg:lobby/archery/q
 
 #reset queue
 scoreboard players set $NextPosition archeryQueuePosition 0
+scoreboard players set $TempQueueCount archeryQueuePosition -1
 kill @e[type=marker,tag=SGArcheryQueueSpawn]
 summon marker -238.5 16.0 169.5 {Tags:["SGArcheryQueueSpawn"],Rotation:[0.0f,0.0f]}
 summon marker -239.5 16.0 169.5 {Tags:["SGArcheryQueueSpawn"],Rotation:[0.0f,0.0f]}
