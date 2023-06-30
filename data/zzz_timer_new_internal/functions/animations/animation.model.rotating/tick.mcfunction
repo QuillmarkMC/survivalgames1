@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function zzz_timer_new_internal:animations/animation.model.rotating/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function zzz_timer_new_internal:animations/animation.model.rotating/tick_animation

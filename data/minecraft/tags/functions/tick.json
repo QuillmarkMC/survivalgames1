@@ -1,5 +1,6 @@
 {
-  "values": [
-      "sg:tick"
-  ]
+	"values": [
+		"sg:tick",
+		"zzz_timer_new_internal:tick"
+	]
 }

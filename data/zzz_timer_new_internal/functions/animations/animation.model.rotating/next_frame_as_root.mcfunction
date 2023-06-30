@@ -1,0 +1,1 @@
+function zzz_timer_new_internal:animations/animation.model.rotating/tick_animation

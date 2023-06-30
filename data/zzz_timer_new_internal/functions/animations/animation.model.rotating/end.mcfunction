@@ -1,0 +1,3 @@
+execute if score @s aj.timer_new.animation.animation.model.rotating.loop_mode = $aj.loop_mode.loop aj.i run function zzz_timer_new_internal:animations/animation.model.rotating/end_loop
+execute if score @s aj.timer_new.animation.animation.model.rotating.loop_mode = $aj.loop_mode.once aj.i run function timer_new:animations/animation.model.rotating/stop
+execute if score @s aj.timer_new.animation.animation.model.rotating.loop_mode = $aj.loop_mode.hold aj.i run function timer_new:animations/animation.model.rotating/pause

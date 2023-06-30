@@ -1,0 +1,1 @@
+function #timer_new:on_summon_as_bones
