@@ -8,8 +8,5 @@ execute unless score $StartMusic options matches 1 as @a at @s run playsound sg:
 
 execute if score $countdown countdown matches 19 run schedule function sg:game/starting/countdown_music 17t
 
-#execute if score $countdown countdown matches 15 as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_one/pause
-#execute if score $countdown countdown matches 15 as @e[type=marker,tag=aj.timer_survivalgames.root,limit=1] run function timer_survivalgames:animations/animation.model.timer_part_two/play
-
 execute unless score $countdown countdown matches ..0 run schedule function sg:game/starting/countdown 1s replace
 execute if score $countdown countdown matches ..0 run function sg:game/starting/countdown_end

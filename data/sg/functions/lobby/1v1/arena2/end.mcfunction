@@ -22,10 +22,10 @@ scoreboard players reset * 1v1Kill
 scoreboard players reset * surrender
 execute as @a[tag=SG1v1Arena2,limit=2] run function sg:lobby/effects/give
 
-execute if score $NextPosition 1v1QueuePosition matches 2.. run function sg:lobby/1v1/queue/advance
-
 #remove tags
 tag @a[tag=SG1v1Player1Arena2,limit=1] remove SG1v1Player1Arena2
 tag @a[tag=SG1v1Player2Arena2,limit=1] remove SG1v1Player2Arena2
 tag @a[tag=SG1v1Arena2,limit=2] remove SG1v1Arena2
 tag @a[tag=1v1Winner,limit=1] remove 1v1Winner
+
+execute if score $NextPosition 1v1QueuePosition matches 2.. run function sg:lobby/1v1/queue/advance

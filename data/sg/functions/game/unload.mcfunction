@@ -1,5 +1,5 @@
 #kill timer
-function timer_survivalgames:remove/all
+function timer_new:remove/all
 #kill markers
 function sg:game/starting/platform/delay_kill
 schedule clear sg:game/starting/platform/rise_delay

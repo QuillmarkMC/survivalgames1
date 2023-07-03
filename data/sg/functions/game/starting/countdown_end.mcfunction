@@ -15,7 +15,7 @@ execute as @e[tag=SGSpawnMarker,type=marker] at @s positioned ~-1 ~11 ~-1 run fi
 scoreboard players operation @a matchID = $Global matchID
 
 #destroy timer model
-function timer_survivalgames:remove/all
+function timer_new:remove/all
 
 #bossbar
 #border delay based on lobby settings
