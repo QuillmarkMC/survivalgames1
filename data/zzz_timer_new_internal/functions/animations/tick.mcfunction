@@ -1,2 +1,2 @@
-execute if entity @s[tag=aj.timer_new.animation.animation.model.rotating] run function zzz_timer_new_internal:animations/animation.model.rotating/tick
 execute if entity @s[tag=aj.timer_new.animation.animation.model.timer_activate] run function zzz_timer_new_internal:animations/animation.model.timer_activate/tick
+execute if entity @s[tag=aj.timer_new.animation.animation.model.rotating] run function zzz_timer_new_internal:animations/animation.model.rotating/tick

@@ -54,4 +54,4 @@ execute if entity @s[tag=aj.timer_new.bone.topright2_] run data modify entity @s
 execute if entity @s[tag=aj.timer_new.bone.topleft2_] run data modify entity @s item.tag.CustomModelData set value 55
 execute if entity @s[tag=aj.timer_new.bone.bottomleft2_] run data modify entity @s item.tag.CustomModelData set value 56
 execute if entity @s[tag=aj.timer_new.bone.bottom2_] run data modify entity @s item.tag.CustomModelData set value 57
-execute if entity @s[tag=aj.timer_new.bone.bone3] run data modify entity @s item.tag.CustomModelData set value 58
+execute if entity @s[tag=aj.timer_new.bone.bone3_] run data modify entity @s item.tag.CustomModelData set value 58

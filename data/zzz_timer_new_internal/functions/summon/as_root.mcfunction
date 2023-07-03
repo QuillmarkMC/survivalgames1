@@ -9,10 +9,10 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function zzz_timer_new_internal:summon/as_rig_entities
 execute if score #variant aj.i = $aj.timer_new.variant.default aj.id run function zzz_timer_new_internal:apply_variant/default_as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.timer_new.animation.animation.model.rotating aj.id run function zzz_timer_new_internal:animations/animation.model.rotating/apply_frame_as_root
-execute if score #animation aj.i = $aj.timer_new.animation.animation.model.rotating aj.id run scoreboard players operation @s aj.timer_new.animation.animation.model.rotating.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.timer_new.animation.animation.model.timer_activate aj.id run function zzz_timer_new_internal:animations/animation.model.timer_activate/apply_frame_as_root
 execute if score #animation aj.i = $aj.timer_new.animation.animation.model.timer_activate aj.id run scoreboard players operation @s aj.timer_new.animation.animation.model.timer_activate.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.timer_new.animation.animation.model.rotating aj.id run function zzz_timer_new_internal:animations/animation.model.rotating/apply_frame_as_root
+execute if score #animation aj.i = $aj.timer_new.animation.animation.model.rotating aj.id run scoreboard players operation @s aj.timer_new.animation.animation.model.rotating.local_anim_time = #frame aj.i
 execute at @s run function #timer_new:on_summon_as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

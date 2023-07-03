@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..200 run function zzz_timer_new_internal:animations/animation.model.rotating/tree/branch_0_200
+execute if score @s aj.anim_time matches 0..80 run function zzz_timer_new_internal:animations/animation.model.rotating/tree/branch_0_80
