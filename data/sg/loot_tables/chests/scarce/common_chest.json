@@ -3,8 +3,8 @@
   "pools": [
     {
       "rolls": {
-        "min": 3,
-        "max": 6
+        "min": 2,
+        "max": 4
       },
       "entries": [
         {
@@ -23,7 +23,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 4,
           "name": "minecraft:cobblestone",
           "functions": [
             {
@@ -37,7 +37,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 3,
           "name": "minecraft:oak_planks",
           "functions": [
             {
@@ -51,7 +51,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 2,
           "name": "minecraft:stick",
           "functions": [
             {
@@ -72,7 +72,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 6
+                "max": 4
               }
             }
           ]
@@ -163,14 +163,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 3,
           "name": "minecraft:experience_bottle",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 2
               }
             }
           ]
