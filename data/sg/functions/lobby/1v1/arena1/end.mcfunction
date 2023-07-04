@@ -1,3 +1,4 @@
+execute if score $Debug options matches 1.. run say sg:lobby/1v1/arena1/end
 #determine winner
 tag @a[tag=SG1v1Arena1,scores={1v1Kill=1..},limit=1] add 1v1Winner
 #add to win streak

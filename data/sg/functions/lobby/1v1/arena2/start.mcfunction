@@ -1,3 +1,4 @@
+execute if score $Debug options matches 1.. run say sg:lobby/1v1/arena2/start
 #tag players
 tag @a[tag=SG1v1Preparing,limit=2] add SG1v1Arena2
 tag @a[tag=SG1v1Preparing,limit=2] remove SG1v1Preparing

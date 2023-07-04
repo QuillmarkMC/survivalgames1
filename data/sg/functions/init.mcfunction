@@ -76,6 +76,8 @@ scoreboard objectives add respawnLocation dummy
 scoreboard players set $Lobby.Default respawnLocation 1
 scoreboard players set $Lobby.Arena respawnLocation 2
 scoreboard players set $Lobby.1v1 respawnLocation 3
+scoreboard objectives add lobbyRespawnFailsafe dummy
+scoreboard players set $Length lobbyRespawnFailsafe 100
 
 #Game
 scoreboard objectives add spawning dummy

@@ -4,12 +4,13 @@ effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
 spawnpoint @s -274 4 115
-tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1]
+tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1,sort=random]
 scoreboard players reset @s click
 scoreboard players reset @s lobbyArenaRespawn
 scoreboard players reset @s archeryQueuePosition
 scoreboard players reset @s 1v1QueuePosition
 scoreboard players reset @s surrender
+scoreboard players reset @s lobbyRespawnFailsafe
 tag @s add SGInitSpawned
 tag @s remove SGResetPlayer
 tag @s remove WinnerWinnerChickenDinner

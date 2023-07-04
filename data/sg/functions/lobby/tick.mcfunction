@@ -31,6 +31,7 @@ execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] unless scor
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena,gamemode=!spectator] run function sg:lobby/arena/enter
 
 #respawn dead players (place anytime after arena entrance check)
+execute as @a[predicate=sg:lobby/death_box,gamemode=adventure] run function sg:lobby/death/failsafe
 execute as @a[scores={death=1..}] run function sg:lobby/death/death
 execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/death/delay_respawn
 
