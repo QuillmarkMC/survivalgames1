@@ -1,4 +1,5 @@
 scoreboard players set $Count lobbyCountdown -1
+scoreboard players reset @a lobbySigns
 kill @e[type=text_display,tag=TeamSelectName]
 function sg:lobby/arena/uninit
 function sg:lobby/training/kill_weapons_rack

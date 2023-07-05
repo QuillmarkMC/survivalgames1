@@ -11,6 +11,8 @@ scoreboard players reset @s archeryQueuePosition
 scoreboard players reset @s 1v1QueuePosition
 scoreboard players reset @s surrender
 scoreboard players reset @s lobbyRespawnFailsafe
+scoreboard players reset @s lobbySigns
+scoreboard players reset @s go_to_sleep
 tag @s add SGInitSpawned
 tag @s remove SGResetPlayer
 tag @s remove WinnerWinnerChickenDinner

@@ -60,6 +60,7 @@ scoreboard objectives add lobbyCountdown dummy
 scoreboard objectives add teamSelectTimer dummy
 scoreboard objectives add lobbyArena dummy
 scoreboard objectives add lobbyArenaRespawn dummy
+scoreboard objectives add go_to_sleep trigger
 scoreboard objectives add hunger food
 scoreboard objectives add archeryQueuePosition dummy
 scoreboard objectives add archeryVar dummy
