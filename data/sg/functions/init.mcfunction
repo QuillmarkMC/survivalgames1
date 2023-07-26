@@ -172,7 +172,7 @@ gamerule doEntityDrops false
 gamerule doFireTick false
 gamerule doInsomnia false
 gamerule doImmediateRespawn true
-gamerule doLimitedCrafting false
+gamerule doLimitedCrafting true
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
