@@ -1,3 +1,6 @@
+#unload lobby
+function sg:lobby/unload
+
 #set gamestate
 scoreboard players operation $state gamestate = $game gamestate
 

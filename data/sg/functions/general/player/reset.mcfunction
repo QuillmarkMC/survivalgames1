@@ -3,6 +3,7 @@ team leave @s
 effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
+function sg:general/player/recipes
 spawnpoint @s -274 4 115
 tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1,sort=random]
 scoreboard players reset @s click
