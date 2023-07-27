@@ -66,6 +66,7 @@ recipe give @s bow
 recipe give @s crossbow
 recipe give @s tripwire_hook
 recipe give @s fishing_rod
+recipe give @s shield
 
 recipe give @s golden_apple
 recipe give @s golden_carrot

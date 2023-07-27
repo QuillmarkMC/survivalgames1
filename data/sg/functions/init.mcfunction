@@ -9,11 +9,9 @@ execute unless score $state gamestate = $game gamestate run scoreboard players o
 scoreboard objectives add options dummy
 execute unless score $Debug options matches 0.. run scoreboard players set $Debug options 0
 scoreboard players set $lobby_countdown options 10
-scoreboard players set $game_start_countdown options 30
 scoreboard players set $platform_delay options 5
 scoreboard players set $platform_rise_time options 257
 scoreboard players set $end_firework_total options 3
-scoreboard players set $initial_border_grace options 600
 execute unless score $StartMusic options matches 0.. run scoreboard players set $StartMusic options 0
 scoreboard objectives add countdown dummy
 scoreboard players set $2 countdown 2

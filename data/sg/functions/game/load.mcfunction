@@ -12,6 +12,7 @@ function sg:game/generate/anvils/place
 scoreboard players set $TotalPlayers win 0
 #Spawn players into map
 function sg:game/spawning/check_mode
+execute as @a run spawnpoint @s -221 55 115
 clear @a
 effect clear @a
 effect give @a[tag=SGPlaying] weakness infinite 255 true
