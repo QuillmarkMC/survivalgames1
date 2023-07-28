@@ -43,4 +43,9 @@ function sg:lobby/1v1/tick
 #admin teleporter cooldown
 execute as @a[scores={adminTeleportCooldown=1..}] run scoreboard players remove @s adminTeleportCooldown 1
 
+#delay summoning entities on reload
+execute unless score $EntityLoad lobbyVar matches 1 if score $EntityLoadTimer lobbyVar matches 100.. run function sg:lobby/markers/delayed_load
+execute unless score $EntityLoad lobbyVar matches 1 run scoreboard players add $EntityLoadTimer lobbyVar 1
+execute unless score $EntityLoad lobbyVar matches 1 if entity @a run function sg:lobby/markers/delayed_load
+
 kill @e[type=item]
