@@ -48,4 +48,6 @@ execute unless score $EntityLoad lobbyVar matches 1 if score $EntityLoadTimer lo
 execute unless score $EntityLoad lobbyVar matches 1 run scoreboard players add $EntityLoadTimer lobbyVar 1
 execute unless score $EntityLoad lobbyVar matches 1 if entity @a run function sg:lobby/markers/delayed_load
 
+execute as @a[gamemode=adventure,predicate=!sg:lobby/in_bounds] run tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1,sort=random]
+
 kill @e[type=item]

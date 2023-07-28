@@ -4,7 +4,7 @@ scoreboard players set $FloodLevel temple 0
 
 #recursive call to clear all lava
 scoreboard players set $TempleResetLevel temple 0
-execute positioned -500 46 390 run function sg:game/logic/temple/reset/loop
+execute positioned -500 46 383 run function sg:game/logic/temple/reset/loop
 
 #manually place back needed lava source blocks
 fill -432 63 413 -456 63 413 lava

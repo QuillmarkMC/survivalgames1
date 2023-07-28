@@ -20,3 +20,4 @@ scoreboard players set $Heartbeat countdown 0
 tag @a add SGResetPlayer
 
 function sg:lobby/load
+function sg:lobby/markers/delayed_load
