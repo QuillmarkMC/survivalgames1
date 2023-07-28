@@ -23,6 +23,9 @@ execute store success score $TempRandom teams run clear @s bedrock{JoinTeamRando
 execute store success score $TempReady teams run clear @s bedrock{JoinTeamReady:1} 1
 execute store success score $TempNotReady teams run clear @s bedrock{JoinTeamNotReady:1} 1
 
+#prevent changing teams during start countdown
+execute if score $Count lobbyCountdown matches 0.. run function sg:lobby/team_select/countdown_started
+
 #run logic based on what item was selected
 execute if score $TempAqua teams matches 1.. run function sg:lobby/team_select/click_logic/aqua/request
 execute if score $TempBlack teams matches 1.. run function sg:lobby/team_select/click_logic/black/request
