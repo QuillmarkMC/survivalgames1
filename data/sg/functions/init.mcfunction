@@ -6,6 +6,8 @@ scoreboard players set $game gamestate 1
 execute unless score $state gamestate = $game gamestate run scoreboard players operation $state gamestate = $lobby gamestate
 
 #General
+scoreboard objectives add var dummy
+execute unless score $ChunkLoad var matches 1.. run scoreboard players set $ChunkLoad var 0
 scoreboard objectives add options dummy
 execute unless score $Debug options matches 0.. run scoreboard players set $Debug options 0
 scoreboard players set $lobby_countdown options 10
@@ -99,27 +101,7 @@ execute if score $state gamestate = $lobby gamestate run function sg:lobby/setti
 execute if score $state gamestate = $lobby gamestate run function sg:lobby/load
 
 ##Forceload
-#cornucopia
-#forceload add -262 164 -185 72
-#entire map monkaS
-forceload add -715 613 -662 -376
-forceload add -651 613 -598 -376
-forceload add -587 613 -534 -376
-forceload add -523 613 -470 -376
-forceload add -459 613 -406 -376
-forceload add -395 613 -342 -376
-forceload add -331 613 -278 -376
-forceload add -267 613 -214 -376
-forceload add -203 613 -150 -376
-forceload add -139 613 -86 -376
-forceload add -75 613 -22 -376
-forceload add -11 613 42 -376
-forceload add 53 613 106 -376
-forceload add 117 613 170 -376
-forceload add 181 613 234 -376
-forceload add 229 613 282 -376
-#mine bridge
-#forceload add 172 1 183 29
+execute unless score $ChunkLoad var matches 1 run function sg:forceload
 
 ##Teams
 team add Aqua
