@@ -16,3 +16,6 @@ execute as @a[tag=SGPlaying,gamemode=adventure] run function sg:game/logic/out_o
 #temple warning
 execute as @a[scores={openChest=1..}] run function sg:game/logic/temple/flood/check
 execute if entity @a[predicate=sg:temple/lava_room,gamemode=adventure] if score $FloodState temple matches 0 run function sg:game/logic/temple/flood/schedule
+
+#check mine collapsing bridge
+function sg:game/logic/mines/tick
