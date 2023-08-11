@@ -5,7 +5,7 @@
       }
     },
     "rewards": {
-      "function": "sg:general/player/inventory_update"
+      "function": "sg:general/player/inventory/update"
     }
   }
   
