@@ -9,3 +9,5 @@ title @a[tag=SG1v1Arena2,limit=2] title [{"text": "Begin!","color": "green"}]
 
 ride @a[tag=SG1v1Player1Arena2,limit=1] dismount
 ride @a[tag=SG1v1Player2Arena2,limit=1] dismount
+
+function sg:lobby/1v1/arena2/timer/update

@@ -20,3 +20,4 @@ execute as @a at @s run playsound ui.toast.challenge_complete record @s ~ ~ ~ 1 
 effect give @a[tag=WinnerWinnerChickenDinner] resistance infinite 10 true
 
 schedule function sg:game/logic/end/transition 160t
+schedule clear sg:game/logic/border/update
