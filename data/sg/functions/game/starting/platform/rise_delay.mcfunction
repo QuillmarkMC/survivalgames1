@@ -1,7 +1,7 @@
 #delay platform movement by 2 ticks to prevent levitation bugs
 scoreboard players remove $PlatformRise spawning 1
 execute as @e[type=armor_stand,tag=SGPlatform] at @s run tp ~ ~0.045 ~
-execute as @a[tag=SGPlaying] at @s run ride @s mount @e[type=shulker,sort=nearest,tag=SGPlatform,limit=1]
+execute as @a[tag=SGPlaying] at @s run ride @s mount @e[type=armor_stand,sort=nearest,tag=SGPlatformRide,limit=1]
 execute as @a[tag=SGPlaying] run title @s actionbar ""
 
 execute if score $StartMusic options matches 1 if score $PlatformRise spawning matches 17 run function sg:game/starting/countdown_music

@@ -198,3 +198,6 @@ execute positioned -371 44 -194 run summon marker ~ ~ ~ {Tags:["SGChest","SGComm
 execute positioned -317 45 -122 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned -286 54 -342 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
 execute positioned -63 58 -247 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
+execute positioned -441 29 261 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
+execute positioned -325 46 122 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}
+execute positioned -338 45 98 run summon marker ~ ~ ~ {Tags:["SGChest","SGCommonChest"]}

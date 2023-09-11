@@ -1,7 +1,4 @@
 #effects
-#execute as @a[tag=!SGArenaFighter] run effect give @s regeneration infinite 255 true
-#execute as @a[tag=!SGArenaFighter] run effect give @s resistance infinite 255 true
-#execute as @a[tag=!SGArenaFighter] run effect give @s weakness infinite 255 true
 execute as @a[scores={hunger=..19}] run effect give @s saturation 1 0 true
 
 execute as @a if score @s click matches 1.. run function sg:lobby/inventory/click
@@ -30,13 +27,13 @@ execute as @a[tag=SGArenaFighter,predicate=!sg:lobby/arena_deserter] unless scor
 #check if player entered arena
 execute as @a[tag=!SGArenaFighter,predicate=sg:lobby/arena,gamemode=!spectator] run function sg:lobby/arena/enter
 
-#arena suicide
-execute as @a[scores={go_to_sleep=1..}] run kill @s
-
 #respawn dead players (place anytime after arena entrance check)
 execute as @a[predicate=sg:lobby/death_box,gamemode=adventure] run function sg:lobby/death/failsafe
 execute as @a[scores={death=1..}] run function sg:lobby/death/death
 execute as @a[scores={lobbyArenaRespawn=0..}] run function sg:lobby/death/delay_respawn
+
+#arena suicide
+execute as @a[scores={go_to_sleep=1..}] run kill @s
 
 #tick archery minigame
 function sg:lobby/archery/tick
@@ -45,5 +42,12 @@ function sg:lobby/1v1/tick
 
 #admin teleporter cooldown
 execute as @a[scores={adminTeleportCooldown=1..}] run scoreboard players remove @s adminTeleportCooldown 1
+
+#delay summoning entities on reload
+execute unless score $EntityLoad lobbyVar matches 1 if score $EntityLoadTimer lobbyVar matches 100.. run function sg:lobby/markers/delayed_load
+execute unless score $EntityLoad lobbyVar matches 1 run scoreboard players add $EntityLoadTimer lobbyVar 1
+execute unless score $EntityLoad lobbyVar matches 1 if entity @a run function sg:lobby/markers/delayed_load
+
+execute as @a[gamemode=adventure,predicate=!sg:lobby/in_bounds] run tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1,sort=random]
 
 kill @e[type=item]

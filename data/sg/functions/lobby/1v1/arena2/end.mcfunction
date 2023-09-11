@@ -21,6 +21,7 @@ scoreboard players set $Arena2State 1v1Var 0
 scoreboard players add $ArenaAvailable 1v1Var 2
 scoreboard players reset * 1v1Kill
 scoreboard players reset * surrender
+schedule clear sg:lobby/1v1/arena2/timer/update
 execute as @a[tag=SG1v1Arena2,limit=2] run function sg:lobby/effects/give
 
 #remove tags

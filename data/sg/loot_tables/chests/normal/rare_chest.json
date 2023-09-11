@@ -37,11 +37,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:crossbow"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:arrow",
           "functions": [

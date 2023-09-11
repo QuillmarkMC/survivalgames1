@@ -9,12 +9,12 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
+          "weight": 2,
           "name": "sg:memes/horn"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "minecraft:diamond",
           "functions": [
             {
@@ -28,7 +28,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 16,
           "name": "minecraft:gold_ingot",
           "functions": [
             {
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 20,
           "name": "minecraft:iron_ingot",
           "functions": [
             {
@@ -56,7 +56,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "minecraft:arrow",
           "functions": [
             {
@@ -70,12 +70,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "minecraft:spyglass"
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "minecraft:cooked_cod",
           "functions": [
             {
@@ -89,7 +89,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "minecraft:cooked_chicken",
           "functions": [
             {
@@ -103,7 +103,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "name": "minecraft:cooked_beef",
           "functions": [
             {
@@ -117,7 +117,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 8,
           "name": "minecraft:experience_bottle",
           "functions": [
             {

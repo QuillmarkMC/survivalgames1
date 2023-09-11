@@ -1,3 +1,6 @@
+#unload lobby
+function sg:lobby/unload
+
 #set gamestate
 scoreboard players operation $state gamestate = $game gamestate
 
@@ -8,7 +11,9 @@ function sg:game/generate/anvils/place
 #reset total player count
 scoreboard players set $TotalPlayers win 0
 #Spawn players into map
+function sg:game/starting/platform/delay_kill
 function sg:game/spawning/check_mode
+execute as @a run spawnpoint @s -221 55 115
 clear @a
 effect clear @a
 effect give @a[tag=SGPlaying] weakness infinite 255 true
@@ -29,6 +34,7 @@ function sg:game/logic/temple/reset/start
 scoreboard players add $Global matchID 1
 
 #big timer model
+function timer_new:remove/all
 execute at @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] run function timer_new:summon
 execute as @e[type=item_display,tag=aj.timer_new.root,limit=1] run function timer_new:animations/animation.model.rotating/play
 

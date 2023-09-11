@@ -10,7 +10,7 @@ item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
-item replace entity @s hotbar.8 with air
+function sg:general/player/inventory/lobby_book
 
 item replace entity @s weapon.offhand with air
 
