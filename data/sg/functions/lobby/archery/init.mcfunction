@@ -16,7 +16,7 @@ summon marker -252.0 21 177.0 {Tags:["SGArcheryZombieSpawn"]}
 scoreboard players set @e[type=marker,tag=SGArcheryZombieSpawn] archeryZombieSpawnDelay 0
 
 #summon armor stand to be ridden
-summon armor_stand -238.5 13.8 180.5 {Tags:["SGArcherySeat"],Rotation:[90.0f,0.0f],NoGravity:true,Invulnerable:true,Invisible:true}
+summon armor_stand -238.5 13.6 180.5 {Tags:["SGArcherySeat"],Rotation:[90.0f,0.0f],NoGravity:true,Invulnerable:true,Invisible:true}
 
 #end game and reset queue
 execute as @a[tag=SGArcheryPlayer] run function sg:lobby/archery/end
