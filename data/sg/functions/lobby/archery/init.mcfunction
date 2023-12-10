@@ -38,7 +38,7 @@ summon marker -252.5 16.0 169.5 {Tags:["SGArcheryQueueSpawn"],Rotation:[0.0f,0.0
 
 #text display
 kill @e[type=text_display,tag=SGArcheryQueueDisplay]
-summon text_display -231.5 17.5 165.5 {Tags:["SGArcheryQueueDisplay"],alignment:"center",text:"",billboard:"center",background:0}
+summon text_display -231.5 17.5 165.5 {Tags:["SGArcheryQueueDisplay"],alignment:"center",text:'{"text": ""}',billboard:"center",background:0}
 function sg:lobby/archery/queue/text_display
 
 execute unless score $Global archeryHighscore matches 0.. run scoreboard players set $Global archeryHighscore 0
