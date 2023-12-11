@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 18,
-        "description": "Datapack for Ruins of Altrac." 
+        "pack_format": 26,
+        "description": "Datapack for Ruins of Altrac",
+        "supported_formats": [18, 26]
     },
     "filter": {
         "block": [
