@@ -37,4 +37,4 @@ execute store success score #TempRandom teams if score #YellowCount teams < $Max
 execute if score #TempRandom teams matches 1 unless score #RandomTeamAssigned teams matches 1 run function sg:lobby/team_select/click_logic/yellow/join
 
 execute unless score #RandomTeamAssigned teams matches 1 run team join Spectator
-execute unless score #RandomTeamAssigned teams matches 1 run tellraw @s [{"text": ""},{"text":"[!] ","color":"#ed771c","bold": true},{"text": "Too many players!","color": "dark_red"},{"text": " The maximum player count has been reached; you have automatically been set as a spectator."}]
+execute unless score #RandomTeamAssigned teams matches 1 run tellraw @s [{"text": ""},{"text":"[!] ","color":"#ed771c","bold": true},{"translate": "text.lobby.team_select.random.error1","color": "dark_red"},{"translate": "text.lobby.team_select.random.error2"}]

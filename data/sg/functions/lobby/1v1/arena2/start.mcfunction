@@ -30,6 +30,6 @@ function sg:lobby/1v1/arena2/timer/display
 scoreboard players set $Arena2State 1v1Var 1
 scoreboard players remove $ArenaAvailable 1v1Var 2
 
-tellraw @a[tag=SG1v1Arena2,limit=2] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"text":"Please wait while the arena is generating..."}]
+tellraw @a[tag=SG1v1Arena2,limit=2] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"translate":"text.lobby.1v1.generate"}]
 title @a[tag=SG1v1Arena2,limit=2] actionbar ""
 function sg:lobby/1v1/queue/text_display

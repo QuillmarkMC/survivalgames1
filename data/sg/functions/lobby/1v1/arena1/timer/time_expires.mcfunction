@@ -1,2 +1,2 @@
-tellraw @a[tag=SG1v1Arena1,limit=2] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"text":"Times up!"}]
+tellraw @a[tag=SG1v1Arena1,limit=2] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"translate":"text.lobby.1v1.end.time"}]
 function sg:lobby/1v1/arena1/end
