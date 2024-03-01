@@ -10,4 +10,4 @@ execute if score $state gamestate = $lobby gamestate run function sg:lobby/tick
 execute if score $state gamestate = $game gamestate run function sg:game/tick
 
 #arrow rotation
-execute as @e[tag=map_arrow] at @s run tp @s ~ ~ ~ ~10 ~
+execute as @e[tag=map_arrow] at @s run tp @s ~ ~ ~ ~3 ~
