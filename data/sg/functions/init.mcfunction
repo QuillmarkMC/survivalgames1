@@ -152,6 +152,7 @@ team modify White color white
 team add Yellow
 team modify Yellow color yellow
 team add Solo
+team modify Solo friendlyFire true
 team add Ready
 team modify Ready color dark_green
 team add Spectator
@@ -179,6 +180,7 @@ gamerule drowningDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
+gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false

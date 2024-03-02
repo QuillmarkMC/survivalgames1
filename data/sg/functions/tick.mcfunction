@@ -11,3 +11,6 @@ execute if score $state gamestate = $game gamestate run function sg:game/tick
 
 #arrow rotation
 execute as @e[tag=map_arrow] at @s run tp @s ~ ~ ~ ~3 ~
+
+#survival mode safety check
+execute as @a[gamemode=survival,tag=!Bypass_Safety] run function sg:general/safety/survival
