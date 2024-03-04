@@ -8,6 +8,7 @@ execute unless score $state gamestate = $game gamestate run scoreboard players o
 #General
 scoreboard objectives add var dummy
 execute unless score $ChunkLoad var matches 1.. run scoreboard players set $ChunkLoad var 0
+execute unless score $EnforcePlayerCap var matches 0.. run scoreboard players set $EnforcePlayerCap var 1
 scoreboard objectives add options dummy
 execute unless score $Debug options matches 0.. run scoreboard players set $Debug options 0
 scoreboard players set $lobby_countdown options 10

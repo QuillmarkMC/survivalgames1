@@ -1,0 +1,4 @@
+scoreboard players set $EnforcePlayerCap var 0
+tellraw @s [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.safety.playercap.off"}]
+tellraw @s [{"text": ""},{"text":"[!] ","color":"dark_red","bold": true},{"translate":"text.safety.playercap.warning1"},{"translate":"text.safety.bypass.warning2","underlined": true,"color": "yellow","clickEvent": {"action":"suggest_command","value": "/function sg:general/safety/playercap/on"},"hoverEvent":{"action":"show_text","contents":[{"translate":"text.safety.survival3","italic":true,"color":"gray"}]}},{"translate":"text.safety.playercap.warning2"}]
+execute at @s run playsound block.note_block.pling record @s

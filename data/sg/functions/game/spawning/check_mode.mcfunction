@@ -6,6 +6,7 @@ execute as @e[tag=SGSpawnMarker,type=marker] at @s[tag=!SGSpectatorSpawnMarker] 
 
 #reset scoreboards for knowing how many players are at each spot
 scoreboard players set $NextSpawn spawning 0
+scoreboard players set $SpawningRound spawning 1
 scoreboard players set $TotalPlayers win 0
 
 #check gamemode
