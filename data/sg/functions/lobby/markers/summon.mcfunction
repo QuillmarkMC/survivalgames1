@@ -15,3 +15,4 @@ summon item_display -216.81 11.0703125 115.23 {teleport_duration:1,Tags:["SGLobb
 summon item_display -217.23 11.0703125 112.78 {teleport_duration:1,Tags:["SGLobbyMap","SGLobbyMapArrow"],item:{id:"minecraft:phantom_membrane",Count:1b,tag:{CustomModelData:2}}}
 summon item_display -220.39 11.0703125 118.46 {teleport_duration:1,Tags:["SGLobbyMap","SGLobbyMapArrow"],item:{id:"minecraft:phantom_membrane",Count:1b,tag:{CustomModelData:2}}}
 summon item_display -220.55 11.0703125 117.17 {teleport_duration:1,Tags:["SGLobbyMap","SGLobbyMapArrow"],item:{id:"minecraft:phantom_membrane",Count:1b,tag:{CustomModelData:2}}}
+summon item_display -222.38 11.0703125 113.34 {teleport_duration:1,Tags:["SGLobbyMap","SGLobbyMapArrow"],item:{id:"minecraft:phantom_membrane",Count:1b,tag:{CustomModelData:2}}}
