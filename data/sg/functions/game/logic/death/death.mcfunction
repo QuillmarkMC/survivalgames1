@@ -6,6 +6,7 @@ title @s subtitle [{"text": ""},{"translate": "text.game.death.subtitle","color"
 title @s title {"color":"dark_red","translate":"text.game.death.title"}
 
 scoreboard players set @s combatTimer 0
+tag @s add SGDeadPlayer
 
 function sg:game/spawning/spectator/join
 #function sg:game/logic/death/location
