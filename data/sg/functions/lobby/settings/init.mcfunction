@@ -13,6 +13,7 @@ scoreboard players set $MaxTeamSize.State lobbySigns 0
 scoreboard players set $GracePeriod.State lobbySigns 0
 scoreboard players set $RestockType.State lobbySigns 0
 scoreboard players set $MapSize.State lobbySigns 0
+scoreboard players set $LobbyMap.State lobbySigns -1
 scoreboard players set $LootMode.State lobbySigns 0
 scoreboard players set $UHC.State lobbySigns 0
 
