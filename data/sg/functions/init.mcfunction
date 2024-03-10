@@ -8,6 +8,7 @@ execute unless score $state gamestate = $game gamestate run scoreboard players o
 #General
 scoreboard objectives add var dummy
 execute unless score $ChunkLoad var matches 1.. run scoreboard players set $ChunkLoad var 0
+execute unless score $EnforcePlayerCap var matches 0.. run scoreboard players set $EnforcePlayerCap var 1
 scoreboard objectives add options dummy
 execute unless score $Debug options matches 0.. run scoreboard players set $Debug options 0
 scoreboard players set $lobby_countdown options 10
@@ -137,6 +138,7 @@ team modify White color white
 team add Yellow
 team modify Yellow color yellow
 team add Solo
+team modify Solo friendlyFire true
 team add Ready
 team modify Ready color dark_green
 team add Spectator
@@ -164,6 +166,7 @@ gamerule drowningDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
+gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false

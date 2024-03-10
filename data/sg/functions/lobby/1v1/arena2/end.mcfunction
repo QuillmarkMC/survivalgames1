@@ -3,7 +3,7 @@ execute if score $Debug options matches 1.. run say sg:lobby/1v1/arena2/end
 tag @a[tag=SG1v1Arena2,scores={1v1Kill=1..},limit=1] add 1v1Winner
 #add to win streak
 scoreboard players add @a[tag=1v1Winner,limit=1] 1v1Killstreak 1
-tellraw @a[tag=1v1Winner,limit=1] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"text":"You are on a 1v1 win streak of "},{"score":{"name":"@a[tag=1v1Winner,limit=1]","objective":"1v1Killstreak"},"color": "yellow"},{"text": "!","color": "yellow"}]
+tellraw @a[tag=1v1Winner,limit=1] [{"text": ""},{"text":"[!] ","color":"gray","bold": true},{"translate":"text.lobby.1v1.streak"},{"score":{"name":"@a[tag=1v1Winner,limit=1]","objective":"1v1Killstreak"},"color": "yellow"},{"text": "!","color": "yellow"}]
 execute as @a[tag=1v1Winner,limit=1] if score @s 1v1Killstreak > @s 1v1Highscore run function sg:lobby/1v1/scores/personal_best
 #reset win streak for loser
 scoreboard players reset @a[tag=SG1v1Arena2,tag=!1v1Winner] 1v1Killstreak

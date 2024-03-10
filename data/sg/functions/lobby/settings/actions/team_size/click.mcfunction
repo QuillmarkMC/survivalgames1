@@ -5,8 +5,8 @@ execute if score $MaxTeamSize.State lobbySigns matches 0 run scoreboard players 
 execute if score $MaxTeamSize.State lobbySigns matches 1 run scoreboard players set $MaxTeamSize teams 2
 execute if score $MaxTeamSize.State lobbySigns matches 2 run scoreboard players set $MaxTeamSize teams 3
 
-execute if score $MaxTeamSize.State lobbySigns matches 1..2 run data merge entity @e[type=text_display,tag=TeamSelectName,limit=1] {text:"{\"text\":\"Select your team!\",\"color\":\"green\"}"}
-execute if score $MaxTeamSize.State lobbySigns matches 0 run data merge entity @e[type=text_display,tag=TeamSelectName,limit=1] {text:"{\"text\":\"Ready up!\",\"color\":\"green\"}"}
+execute if score $MaxTeamSize.State lobbySigns matches 1..2 run data merge entity @e[type=text_display,tag=TeamSelectName,limit=1] {text:"{\"translate\":\"text.lobby.team_select.display.teams\",\"color\":\"green\"}"}
+execute if score $MaxTeamSize.State lobbySigns matches 0 run data merge entity @e[type=text_display,tag=TeamSelectName,limit=1] {text:"{\"translate\":\"text.lobby.team_select.display.solo\",\"color\":\"green\"}"}
 
 #make all players leave their teams when changing team size
 execute as @a[team=!] run function sg:lobby/settings/actions/team_size/force_leave

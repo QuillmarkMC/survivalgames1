@@ -7,4 +7,4 @@ execute if score $LootMode options matches 1 positioned -219.5 45.0 115.5 as @e[
 execute if score $LootMode options matches 2 positioned -219.5 45.0 115.5 as @e[type=marker,distance=..30,tag=SGCommonChest] at @s run data modify block ~ ~ ~ LootTable set value "sg:chests/bountiful/common_chest"
 execute if score $LootMode options matches 2 positioned -219.5 45.0 115.5 as @e[type=marker,distance=..30,tag=SGCornucopiaChest] at @s run data modify block ~ ~ ~ LootTable set value "sg:chests/bountiful/rare_chest"
 
-tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The Cornucopia chests have been restocked!"}]
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.chest.restock.cornucopia"}]

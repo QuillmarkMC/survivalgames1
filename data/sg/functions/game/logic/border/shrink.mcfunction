@@ -11,7 +11,7 @@ bossbar set border visible true
 scoreboard players operation $State border = $Advance border
 function sg:game/logic/border/update
 execute as @a at @s run playsound minecraft:entity.wither.spawn record @s ~ ~ ~ 0.75 1
-tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The border has begun to shrink!"}]
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.border.shrink"}]
 
 #check restock time from lobby
 execute unless score $MapSize options matches 1..2 run scoreboard players set $Restock timers 300

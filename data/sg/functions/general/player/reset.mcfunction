@@ -27,6 +27,7 @@ tag @s remove SG1v1Player1Arena2
 tag @s remove SG1v1Player2Arena2
 tag @s remove SG1v1Arena1
 tag @s remove SG1v1Arena2
+tag @s remove SGDeadPlayer
 scoreboard players operation @s inventoryState = $Lobby.Default inventoryState
 clear @s
 advancement grant @s only sg:inv_changed

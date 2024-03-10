@@ -1,3 +1,6 @@
+#detect if player has been teleported out of gameplay area
+execute if score $GameInProgress archeryVar matches 1 as @a[tag=SGArcheryPlayer,limit=1] unless predicate sg:lobby/archery_shooting_platform run function sg:lobby/archery/end
+
 execute if score $GameInProgress archeryVar matches 1 run ride @a[tag=SGArcheryPlayer,limit=1] mount @e[type=armor_stand,tag=SGArcherySeat,limit=1]
 title @a[tag=SGArcheryPlayer,limit=1] actionbar ""
 #check for dc'd player

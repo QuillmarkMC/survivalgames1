@@ -20,6 +20,6 @@ scoreboard players set $CurrentScore archeryVar 0
 #minigame state
 scoreboard players set $GameInProgress archeryVar 1
 
-tellraw @s [{"text": ""},{"text":"[!] ","color":"light_purple","bold": true},{"text":"You have 1 minute to shoot as many enemies as possible. Good luck!"}]
+tellraw @s [{"text": ""},{"text":"[!] ","color":"light_purple","bold": true},{"translate":"text.lobby.archery.start"}]
 title @s actionbar ""
 function sg:lobby/archery/queue/text_display

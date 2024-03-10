@@ -5,14 +5,14 @@
       "lore": [
         [
           {
-            "text": "Click to join the Yellow team!",
+            "translate": "text.lobby.team_select.item.yellow.lore",
             "color": "dark_gray",
             "italic": true
           }
         ],
         [
           {
-            "text": "Current Players: ",
+            "translate": "text.lobby.team_select.item.current_players.lore",
             "color": "#ed771c",
             "italic": false
           },
@@ -27,7 +27,7 @@
         ],
         [
           {
-            "text": "Max Players: ",
+            "translate": "text.lobby.team_select.item.max_players.lore",
             "color": "#ed771c",
             "italic": false
           },

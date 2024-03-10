@@ -1,5 +1,5 @@
 #start grace period
-tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The barriers have dropped! A "},{"score":{"name":"$grace_period","objective":"options"}},{"text":" second grace period has been applied!"}]
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin1"},{"score":{"name":"$grace_period","objective":"options"}},{"translate":"text.game.begin2"}]
 scoreboard players operation $countdown countdown = $grace_period options
 function sg:game/starting/grace/countdown
 scoreboard players set $Heartbeat countdown 0

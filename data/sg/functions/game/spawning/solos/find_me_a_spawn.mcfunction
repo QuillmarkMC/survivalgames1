@@ -32,7 +32,9 @@ execute if score $NextSpawn spawning matches 30 run tp @s @e[type=marker,tag=SGS
 execute if score $NextSpawn spawning matches 31 run tp @s @e[type=marker,tag=SGSpawn31,limit=1]
 execute if score $NextSpawn spawning matches 32 run tp @s @e[type=marker,tag=SGSpawn32,limit=1]
 
-execute unless score $NextSpawn spawning matches 33.. at @s run function sg:game/starting/platform/summon
-execute if score $NextSpawn spawning matches 33.. run function sg:general/error/max_players
+execute unless score $NextSpawn spawning matches 33.. if score $SpawningRound spawning matches 1 at @s run function sg:game/starting/platform/summon
+execute if score $NextSpawn spawning matches 33.. unless score $EnforcePlayerCap var matches 0 run function sg:general/error/max_players
+#if player cap is disabled, allow multiple players to spawn at the same location
+execute if score $NextSpawn spawning matches 32.. if score $EnforcePlayerCap var matches 0 run function sg:game/spawning/solos/next_round
 
 execute unless score $NextSpawn spawning matches 33.. run scoreboard players add $TotalPlayers win 1

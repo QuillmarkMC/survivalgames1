@@ -5,7 +5,7 @@ scoreboard players set @s lobbyArenaRespawn 5
 scoreboard players reset @s lobbyRespawnFailsafe
 function sg:lobby/effects/give
 
-tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text": " fainted"}]
+tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"translate": "text.lobby.death"}]
 
 scoreboard players operation @s respawnLocation = $Lobby.Default respawnLocation
 execute if entity @s[tag=SGArenaFighter] run function sg:lobby/arena/death/on_death

@@ -6,10 +6,7 @@ execute at @a[tag=SGPlaying] run setblock ~ ~ ~ smooth_stone_slab[type=bottom]
 #kill platform entities
 execute as @e[type=armor_stand,tag=SGPlatform] at @s run tp ~ -100 ~
 schedule function sg:game/starting/platform/delay_kill 2t
-#effects
-#effect clear @a[tag=SGPlaying] levitation
-#sound
-tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The game will begin in 15 seconds!"}]
+tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.begin_soon"}]
 
 #execute as @a at @s run playsound block.anvil.place record @s ~ ~ ~ 0.75
 #scoreboard players set $Heartbeat countdown 2

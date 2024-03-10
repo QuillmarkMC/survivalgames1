@@ -21,7 +21,7 @@ execute if score @s lobbySigns matches 15 run function sg:lobby/settings/actions
 
 execute unless score @s lobbySigns matches 1..4 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
 
-execute if score @s lobbySigns matches 999 run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"text":"Start countdown is in progress! You cannot change settings at this time."}]
-execute if score @s lobbySigns matches 1000.. run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"text":"Settings are locked! "},{"hoverEvent":{"action":"show_text","contents":[{"text":"Admins only!","italic":true,"color":"yellow"}]},"clickEvent":{"action":"run_command","value": "/function sg:lobby/settings/actions/unlock/grant_permission"},"text": "Click here","underlined": true,"color": "gold"},{"text": " to give yourself editing permission."}]
+execute if score @s lobbySigns matches 999 run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"translate":"text.lobby.settings.error.game_start"}]
+execute if score @s lobbySigns matches 1000.. run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"translate":"text.lobby.settings.permission.error1"},{"hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.settings.permission.error2","italic":true,"color":"yellow"}]},"clickEvent":{"action":"run_command","value": "/function sg:lobby/settings/actions/unlock/grant_permission"},"translate": "text.lobby.settings.permission.error3","underlined": true,"color": "gold"},{"translate": "text.lobby.settings.permission.error4"}]
 function sg:lobby/settings/display/update
 scoreboard players reset @s lobbySigns

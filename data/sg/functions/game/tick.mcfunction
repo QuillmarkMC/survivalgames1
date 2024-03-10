@@ -19,3 +19,6 @@ execute if entity @a[predicate=sg:temple/lava_room,gamemode=adventure] if score 
 
 #check mine collapsing bridge
 function sg:game/logic/mines/tick
+
+#prevent dead players from being respawned
+execute as @a[tag=SGDeadPlayer,gamemode=adventure,tag=!Bypass_Safety] run function sg:general/safety/respawn

@@ -50,4 +50,7 @@ execute unless score $EntityLoad lobbyVar matches 1 if entity @a run function sg
 
 execute as @a[gamemode=adventure,predicate=!sg:lobby/in_bounds] run tp @s @e[type=marker,tag=SGLobbySpawnPosition,limit=1,sort=random]
 
+#map arrow rotation
+execute as @e[type=item_display,tag=SGLobbyMapArrow] at @s run tp @s ~ ~ ~ ~3 ~
+
 kill @e[type=item]

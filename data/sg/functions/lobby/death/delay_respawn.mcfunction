@@ -8,3 +8,5 @@ execute if score @s lobbyArenaRespawn matches ..0 if score @s respawnLocation = 
 execute if score @s lobbyArenaRespawn matches ..0 run function sg:lobby/effects/give
 execute if score @s lobbyArenaRespawn matches ..0 run scoreboard players reset @s lobbyRespawnFailsafe
 execute if score @s lobbyArenaRespawn matches ..0 run scoreboard players reset @s lobbyArenaRespawn
+
+advancement grant @s only sg:inv_changed

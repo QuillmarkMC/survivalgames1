@@ -2,3 +2,4 @@
 fill -183 18 111 -183 15 119 air
 execute if score $Locked lobbySigns matches 0 run function sg:lobby/settings/display/unlocked/main
 execute if score $Locked lobbySigns matches 1 run function sg:lobby/settings/display/locked/main
+execute unless score $MapSize.State lobbySigns = $LobbyMap.State lobbySigns run function sg:lobby/settings/display/map_border_display

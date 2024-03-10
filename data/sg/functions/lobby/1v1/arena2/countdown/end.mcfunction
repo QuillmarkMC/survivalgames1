@@ -5,7 +5,7 @@ scoreboard players enable @a[tag=SG1v1Arena2,limit=2] surrender
 
 title @a[tag=SG1v1Arena2,limit=2] times 5t 20t 10t
 title @a[tag=SG1v1Arena2,limit=2] subtitle ""
-title @a[tag=SG1v1Arena2,limit=2] title [{"text": "Begin!","color": "green"}]
+title @a[tag=SG1v1Arena2,limit=2] title [{"translate": "text.lobby.1v1.begin","color": "green"}]
 
 ride @a[tag=SG1v1Player1Arena2,limit=1] dismount
 ride @a[tag=SG1v1Player2Arena2,limit=1] dismount
