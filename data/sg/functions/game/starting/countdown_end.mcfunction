@@ -19,13 +19,19 @@ function timer_new:remove/all
 
 #bossbar
 #border delay based on lobby settings
-execute unless score $MapSize options matches 1..2 run scoreboard players set $Timer border 300
-execute if score $MapSize options matches 1 run scoreboard players set $Timer border 120
-execute if score $MapSize options matches 2 run scoreboard players set $Timer border 30
+scoreboard players operation $Timer border = $BorderDelay options
 execute store result bossbar border max run scoreboard players get $Timer border
 bossbar set border visible true
 scoreboard players operation $State border = $Grace border
 function sg:game/logic/border/update
-execute unless score $MapSize options matches 1..2 run schedule function sg:game/logic/border/shrink 300s
-execute if score $MapSize options matches 1 run schedule function sg:game/logic/border/shrink 120s
-execute if score $MapSize options matches 2 run schedule function sg:game/logic/border/shrink 30s
+execute unless score $BorderDelay.State lobbySigns matches 1..7 run schedule function sg:game/logic/border/shrink 300s
+execute if score $BorderDelay.State lobbySigns matches 1 run schedule function sg:game/logic/border/shrink 120s
+execute if score $BorderDelay.State lobbySigns matches 2 run schedule function sg:game/logic/border/shrink 30s
+execute if score $BorderDelay.State lobbySigns matches 3 run schedule function sg:game/logic/border/shrink 3600s
+execute if score $BorderDelay.State lobbySigns matches 4 run schedule function sg:game/logic/border/shrink 2700s
+execute if score $BorderDelay.State lobbySigns matches 5 run schedule function sg:game/logic/border/shrink 1800s
+execute if score $BorderDelay.State lobbySigns matches 6 run schedule function sg:game/logic/border/shrink 900s
+execute if score $BorderDelay.State lobbySigns matches 7 run schedule function sg:game/logic/border/shrink 600s
+
+#schedule chest restock
+function sg:game/logic/restock/schedule

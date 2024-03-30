@@ -18,6 +18,9 @@ execute if score @s lobbySigns matches 12 run function sg:lobby/settings/actions
 execute if score @s lobbySigns matches 13 run function sg:lobby/settings/actions/map_size
 execute if score @s lobbySigns matches 14 run function sg:lobby/settings/actions/loot_mode
 execute if score @s lobbySigns matches 15 run function sg:lobby/settings/actions/uhc
+execute if score @s lobbySigns matches 16 run function sg:lobby/settings/actions/restock_time/click
+execute if score @s lobbySigns matches 17 run function sg:lobby/settings/actions/border_delay/click
+execute if score @s lobbySigns matches 18 run function sg:lobby/settings/actions/border_shrink/click
 
 execute unless score @s lobbySigns matches 1..4 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
 
