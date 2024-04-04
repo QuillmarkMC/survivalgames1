@@ -39,9 +39,8 @@
           "name": "minecraft:tipped_arrow",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:harming\"}",
-              "count": 1
+              "function": "minecraft:set_potion",
+              "id": "minecraft:harming"
             },
             {
               "function": "minecraft:set_count",
@@ -58,9 +57,8 @@
           "name": "minecraft:tipped_arrow",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:slowness\"}",
-              "count": 1
+              "function": "minecraft:set_potion",
+              "id": "minecraft:slowness"
             },
             {
               "function": "minecraft:set_count",
@@ -78,8 +76,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:3s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 1
+              },
               "count": 1
             }
           ]
@@ -90,8 +90,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:3s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:projectile_protection": 1
+              },
               "count": 1
             }
           ]
@@ -102,8 +104,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:3s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 1
+              },
               "count": 1
             }
           ]
@@ -114,8 +118,10 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"flame\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:flame": 1
+              },
               "count": 1
             }
           ]
@@ -126,8 +132,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"power\",lvl:3s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:power": 1
+              },
               "count": 1
             }
           ]
@@ -138,8 +146,10 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"fire_aspect\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:fire_aspect": 1
+              },
               "count": 1
             }
           ]
@@ -150,8 +160,10 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"infinity\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:infinity": 1
+              },
               "count": 1
             }
           ]
@@ -162,8 +174,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:harming\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:harming",
               "count": 1
             }
           ]
@@ -174,8 +186,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:poison\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:poison",
               "count": 1
             }
           ]
@@ -186,8 +198,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:swiftness\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:swiftness",
               "count": 1
             }
           ]
@@ -198,8 +210,8 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:strength\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strength",
               "count": 1
             }
           ]
@@ -210,8 +222,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:fire_resistance\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:fire_resistance",
               "count": 1
             }
           ]
@@ -222,8 +234,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:regeneration\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:regeneration",
               "count": 1
             }
           ]
@@ -234,8 +246,8 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:healing\"}",
+              "function": "minecraft:set_potion",
+              "id": "minecraft:healing",
               "count": 1
             }
           ]

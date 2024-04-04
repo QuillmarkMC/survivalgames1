@@ -2,26 +2,26 @@
 function sg:lobby/team_select/reset_temp_var
 
 #figure out which teams item was selected (double as clearing the item from inventory, including cursor)
-execute store success score $TempAqua teams run clear @s bedrock{JoinTeamAqua:1} 1
-execute store success score $TempBlack teams run clear @s bedrock{JoinTeamBlack:1} 1
-execute store success score $TempBlue teams run clear @s bedrock{JoinTeamBlue:1} 1
-execute store success score $TempCyan teams run clear @s bedrock{JoinTeamCyan:1} 1
-execute store success score $TempDark_Blue teams run clear @s bedrock{JoinTeamDark_Blue:1} 1
-execute store success score $TempDark_Gray teams run clear @s bedrock{JoinTeamDark_Gray:1} 1
-execute store success score $TempDark_Green teams run clear @s bedrock{JoinTeamDark_Green:1} 1
-execute store success score $TempPurple teams run clear @s bedrock{JoinTeamPurple:1} 1
-execute store success score $TempDark_Red teams run clear @s bedrock{JoinTeamDark_Red:1} 1
-execute store success score $TempGold teams run clear @s bedrock{JoinTeamGold:1} 1
-execute store success score $TempGray teams run clear @s bedrock{JoinTeamGray:1} 1
-execute store success score $TempGreen teams run clear @s bedrock{JoinTeamGreen:1} 1
-execute store success score $TempMagenta teams run clear @s bedrock{JoinTeamMagenta:1} 1
-execute store success score $TempRed teams run clear @s bedrock{JoinTeamRed:1} 1
-execute store success score $TempWhite teams run clear @s bedrock{JoinTeamWhite:1} 1
-execute store success score $TempYellow teams run clear @s bedrock{JoinTeamYellow:1} 1
-execute store success score $TempLeave teams run clear @s bedrock{JoinTeamLeave:1} 1
-execute store success score $TempRandom teams run clear @s bedrock{JoinTeamRandom:1} 1
-execute store success score $TempReady teams run clear @s bedrock{JoinTeamReady:1} 1
-execute store success score $TempNotReady teams run clear @s bedrock{JoinTeamNotReady:1} 1
+execute store success score $TempAqua teams run clear @s bedrock[minecraft:custom_data~{JoinTeamAqua:1}] 1
+execute store success score $TempBlack teams run clear @s bedrock[minecraft:custom_data~{JoinTeamBlack:1}] 1
+execute store success score $TempBlue teams run clear @s bedrock[minecraft:custom_data~{JoinTeamBlue:1}] 1
+execute store success score $TempCyan teams run clear @s bedrock[minecraft:custom_data~{JoinTeamCyan:1}] 1
+execute store success score $TempDark_Blue teams run clear @s bedrock[minecraft:custom_data~{JoinTeamDark_Blue:1}] 1
+execute store success score $TempDark_Gray teams run clear @s bedrock[minecraft:custom_data~{JoinTeamDark_Gray:1}] 1
+execute store success score $TempDark_Green teams run clear @s bedrock[minecraft:custom_data~{JoinTeamDark_Green:1}] 1
+execute store success score $TempPurple teams run clear @s bedrock[minecraft:custom_data~{JoinTeamPurple:1}] 1
+execute store success score $TempDark_Red teams run clear @s bedrock[minecraft:custom_data~{JoinTeamDark_Red:1}] 1
+execute store success score $TempGold teams run clear @s bedrock[minecraft:custom_data~{JoinTeamGold:1}] 1
+execute store success score $TempGray teams run clear @s bedrock[minecraft:custom_data~{JoinTeamGray:1}] 1
+execute store success score $TempGreen teams run clear @s bedrock[minecraft:custom_data~{JoinTeamGreen:1}] 1
+execute store success score $TempMagenta teams run clear @s bedrock[minecraft:custom_data~{JoinTeamMagenta:1}] 1
+execute store success score $TempRed teams run clear @s bedrock[minecraft:custom_data~{JoinTeamRed:1}] 1
+execute store success score $TempWhite teams run clear @s bedrock[minecraft:custom_data~{JoinTeamWhite:1}] 1
+execute store success score $TempYellow teams run clear @s bedrock[minecraft:custom_data~{JoinTeamYellow:1}] 1
+execute store success score $TempLeave teams run clear @s bedrock[minecraft:custom_data~{JoinTeamLeave:1}] 1
+execute store success score $TempRandom teams run clear @s bedrock[minecraft:custom_data~{JoinTeamRandom:1}] 1
+execute store success score $TempReady teams run clear @s bedrock[minecraft:custom_data~{JoinTeamReady:1}] 1
+execute store success score $TempNotReady teams run clear @s bedrock[minecraft:custom_data~{JoinTeamNotReady:1}] 1
 
 #prevent changing teams during start countdown
 execute if score $Count lobbyCountdown matches 0.. run function sg:lobby/team_select/countdown_started

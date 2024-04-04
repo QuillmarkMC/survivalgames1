@@ -12,7 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "minecraft:leather_chestplate"
+    "id": "minecraft:leather_chestplate"
   },
   "show_notification": false
 }

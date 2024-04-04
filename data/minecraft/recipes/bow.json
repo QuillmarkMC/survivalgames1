@@ -15,7 +15,7 @@
     " #X"
   ],
   "result": {
-    "item": "minecraft:bow"
+    "id": "minecraft:bow"
   },
   "show_notification": false
 }

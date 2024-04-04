@@ -12,7 +12,7 @@
     "X X"
   ],
   "result": {
-    "item": "minecraft:leather_leggings"
+    "id": "minecraft:leather_leggings"
   },
   "show_notification": false
 }

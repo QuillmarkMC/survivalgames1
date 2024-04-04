@@ -15,7 +15,7 @@
     " # "
   ],
   "result": {
-    "item": "minecraft:stone_pickaxe"
+    "id": "minecraft:stone_pickaxe"
   },
   "show_notification": false
 }

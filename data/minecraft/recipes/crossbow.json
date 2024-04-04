@@ -21,7 +21,7 @@
     " # "
   ],
   "result": {
-    "item": "minecraft:crossbow"
+    "id": "minecraft:crossbow"
   },
   "show_notification": false
 }

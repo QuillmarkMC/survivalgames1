@@ -10,7 +10,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 2,
-          "name": "sg:memes/horn"
+          "value": "sg:memes/horn"
         },
         {
           "type": "minecraft:item",
@@ -135,8 +135,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"protection\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 1
+              },
               "count": 1
             }
           ]
@@ -147,8 +149,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"projectile_protection\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:projectile_protection": 1
+              },
               "count": 1
             }
           ]
@@ -159,8 +163,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"sharpness\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 1
+              },
               "count": 1
             }
           ]
@@ -171,8 +177,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"knockback\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": 1
+              },
               "count": 1
             }
           ]
@@ -183,8 +191,10 @@
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{StoredEnchantments:[{id:\"power\",lvl:1s}]}",
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:power": 1
+              },
               "count": 1
             }
           ]

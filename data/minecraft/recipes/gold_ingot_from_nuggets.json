@@ -13,7 +13,7 @@
     "###"
   ],
   "result": {
-    "item": "minecraft:gold_ingot"
+    "id": "minecraft:gold_ingot"
   },
   "show_notification": false
 }
