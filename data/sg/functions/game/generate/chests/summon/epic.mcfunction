@@ -1,7 +1,6 @@
 #epics
 execute positioned -339 75 -3 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -387 74 -48 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
-execute positioned 167 56 13 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -23 57 -324 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned 279 52 -384 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned 152 242 -53 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}

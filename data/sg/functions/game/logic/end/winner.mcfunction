@@ -21,3 +21,4 @@ effect give @a[tag=WinnerWinnerChickenDinner] resistance infinite 10 true
 
 schedule function sg:game/logic/end/transition 160t
 schedule clear sg:game/logic/border/update
+schedule clear sg:game/logic/restock/timer

@@ -11,6 +11,7 @@ schedule clear sg:game/logic/restock/timer
 schedule clear sg:game/starting/platform/delay_start
 schedule clear sg:game/starting/platform/rise_delay
 schedule clear sg:game/starting/final_countdown_schedule
+schedule clear sg:game/logic/end/transition
 
 stopsound @a * sg:game.music.countdown
 
