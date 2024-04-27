@@ -15,7 +15,7 @@
     " #"
   ],
   "result": {
-    "item": "minecraft:golden_hoe"
+    "id": "minecraft:golden_hoe"
   },
   "show_notification": false
 }

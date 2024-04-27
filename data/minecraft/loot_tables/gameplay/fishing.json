@@ -9,13 +9,13 @@
             "type": "minecraft:loot_table",
             "weight": 40,
             "quality": -2,
-            "name": "sg:fishing/random"
+            "value": "sg:fishing/random"
           },
           {
             "type": "minecraft:loot_table",
             "weight": 30,
             "quality": 2,
-            "name": "sg:fishing/secret",
+            "value": "sg:fishing/secret",
             "conditions": [
               {
                 "condition": "minecraft:entity_properties",
@@ -45,7 +45,7 @@
             "type": "minecraft:loot_table",
             "weight": 60,
             "quality": -1,
-            "name": "sg:fishing/fish"
+            "value": "sg:fishing/fish"
           }
         ]
       }

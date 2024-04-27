@@ -5,7 +5,7 @@ scoreboard players set $Temp teams 0
 execute if score @s enderClick matches 1.. run function sg:lobby/team_select/inventory/update
 #if player drops item directly out of ender chest, reset its inventory
 execute if score @s dropBedrock matches 1.. run function sg:lobby/team_select/inventory/update
-execute store success score $Temp teams run clear @s bedrock{TeamSelect:1} 0
+execute store success score $Temp teams run clear @s bedrock[minecraft:custom_data~{TeamSelect:1}] 0
 
 #automatically update chest inventory every 5 seconds
 scoreboard players remove @s teamSelectTimer 1

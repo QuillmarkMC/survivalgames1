@@ -15,7 +15,7 @@
     "#"
   ],
   "result": {
-    "item": "minecraft:golden_sword"
+    "id": "minecraft:golden_sword"
   },
   "show_notification": false
 }

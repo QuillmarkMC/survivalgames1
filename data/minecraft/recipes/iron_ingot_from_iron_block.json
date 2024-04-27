@@ -9,7 +9,7 @@
   ],
   "result": {
     "count": 9,
-    "item": "minecraft:iron_ingot"
+    "id": "minecraft:iron_ingot"
   },
   "show_notification": false
 }

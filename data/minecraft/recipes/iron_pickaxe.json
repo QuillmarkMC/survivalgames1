@@ -15,7 +15,7 @@
     " # "
   ],
   "result": {
-    "item": "minecraft:iron_pickaxe"
+    "id": "minecraft:iron_pickaxe"
   },
   "show_notification": false
 }

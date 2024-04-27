@@ -15,7 +15,7 @@
     "# X"
   ],
   "result": {
-    "item": "minecraft:fishing_rod"
+    "id": "minecraft:fishing_rod"
   },
   "show_notification": false
 }

@@ -15,7 +15,7 @@
     "#"
   ],
   "result": {
-    "item": "minecraft:wooden_sword"
+    "id": "minecraft:wooden_sword"
   },
   "show_notification": false
 }

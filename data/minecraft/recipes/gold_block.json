@@ -12,7 +12,7 @@
     "###"
   ],
   "result": {
-    "item": "minecraft:gold_block"
+    "id": "minecraft:gold_block"
   },
   "show_notification": false
 }
