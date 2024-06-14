@@ -1,13 +1,13 @@
 {
     "pack": {
-        "pack_format": 41,
+        "pack_format": 47,
         "description": "Datapack for Ruins of Altrac"
     },
     "filter": {
         "block": [
             {
                 "namespace": "minecraft",
-                "path": "advancements/.*"
+                "path": "advancement/.*"
             }
         ]
     }
