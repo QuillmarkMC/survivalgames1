@@ -1,6 +1,6 @@
 function sg:lobby/inventory/default_clear
 
-item replace entity @s hotbar.0 with iron_sword[unbreakable={show_in_tooltip:false},hide_additional_tooltip={}] 
+item replace entity @s hotbar.0 with iron_sword[unbreakable={show_in_tooltip:false},hide_additional_tooltip={}]
 item replace entity @s hotbar.1 with stone_axe[unbreakable={show_in_tooltip:false},hide_additional_tooltip={}]
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air
