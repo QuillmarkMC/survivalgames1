@@ -26,7 +26,7 @@ execute positioned -448 64 410 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicC
 execute positioned -440 64 410 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -433 64 417 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -719 63 614 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
-execute positioned -696 -40 304 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
+execute positioned -696 -40 301 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -696 -39 298 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -696 -39 304 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
 execute positioned -699 -39 301 run summon marker ~ ~ ~ {Tags:["SGChest","SGEpicChest"]}
