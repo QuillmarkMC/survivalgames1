@@ -1,4 +1,4 @@
-execute store result score $RemainingPlayers win if entity @a[tag=SGPlaying,gamemode=adventure]
+execute store result score $RemainingPlayers win if entity @a[tag=SGPlaying,gamemode=!spectator]
 scoreboard players operation @s playerPosition = $RemainingPlayers win
 
 title @s times 5 60 20

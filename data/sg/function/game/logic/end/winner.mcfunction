@@ -1,4 +1,4 @@
-tag @a[tag=SGPlaying,gamemode=adventure] add WinnerWinnerChickenDinner
+tag @a[tag=SGPlaying,gamemode=!spectator] add WinnerWinnerChickenDinner
 #tag winners to get VIP lobby access, persists through resets
 tag @a[tag=WinnerWinnerChickenDinner] add VictoryRoyale
 
