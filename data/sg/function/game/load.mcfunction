@@ -18,8 +18,8 @@ clear @a
 effect clear @a
 effect give @a[tag=SGPlaying] weakness infinite 255 true
 effect give @a[tag=SGPlaying] resistance infinite 10 true
+effect give @a[tag=SGPlaying] regeneration infinite 10 true
 gamemode adventure @a[tag=SGPlaying]
-#team join Solo @a[tag=SGPlaying]
 execute as @a[tag=!SGPlaying] run function sg:game/spawning/spectator/join
 
 #prepare platform
