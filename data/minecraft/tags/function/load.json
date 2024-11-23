@@ -1,6 +1,5 @@
 {
 	"values": [
-		"sg:init",
-		"zzz_timer_new_internal:load"
+		"sg:init"
 	]
 }

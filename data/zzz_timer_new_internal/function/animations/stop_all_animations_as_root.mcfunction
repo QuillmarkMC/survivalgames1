@@ -1,2 +1,0 @@
-function zzz_timer_new_internal:animations/animation.model.timer_activate/pause
-function zzz_timer_new_internal:animations/animation.model.rotating/pause

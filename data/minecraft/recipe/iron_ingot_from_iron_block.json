@@ -3,13 +3,10 @@
   "category": "misc",
   "group": "iron_ingot",
   "ingredients": [
-    {
-      "item": "minecraft:iron_block"
-    }
+    "minecraft:iron_block"
   ],
   "result": {
     "count": 9,
     "id": "minecraft:iron_ingot"
-  },
-  "show_notification": false
+  }
 }

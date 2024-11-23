@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:iron_ingot"
-    }
+    "#": "minecraft:iron_ingot"
   },
   "pattern": [
     "###",
@@ -12,6 +10,7 @@
     "###"
   ],
   "result": {
+    "count": 1,
     "id": "minecraft:iron_block"
   },
   "show_notification": false

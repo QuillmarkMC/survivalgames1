@@ -1,3 +1,0 @@
-execute if score @s aj.anim_time matches 64..71 run function zzz_timer_new_internal:animations/animation.model.rotating/tree/branch_64_71
-execute if score @s aj.anim_time matches 72..79 run function zzz_timer_new_internal:animations/animation.model.rotating/tree/branch_72_79
-execute if score @s aj.anim_time matches 80 run function zzz_timer_new_internal:animations/animation.model.rotating/tree/leaf_80
