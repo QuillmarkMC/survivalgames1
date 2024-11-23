@@ -1,5 +1,5 @@
 #kill timer
-function timer_new:remove/all
+kill @e[type=item_display,tag=SGCountdownTimer,limit=1]
 #kill markers
 function sg:game/starting/platform/delay_kill
 
@@ -19,6 +19,7 @@ scoreboard players reset * combatTimer
 scoreboard players reset * deathDelayTimer
 scoreboard players set $countdown countdown 0
 scoreboard players set $Heartbeat countdown 0
+scoreboard players set $CountdownTimerActivated timers 0
 
 tag @a add SGResetPlayer
 
