@@ -36,7 +36,7 @@ function sg:game/logic/temple/reset/start
 scoreboard players add $Global matchID 1
 
 #big timer model
-execute at @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] positioned ~1.5 ~5.5 ~-0.5 run summon item_display ~ ~ ~ {teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:pufferfish_bucket",count:1,components:{"minecraft:custom_model_data":{floats:[15]},item_model:"sg:timer"}},Tags:["SGCountdownTimer"]}
+execute at @e[type=marker,tag=SGSpectatorSpawnMarker,limit=1] positioned ~1.5 ~5.5 ~-0.5 run summon item_display ~ ~ ~ {teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},item:{id:"minecraft:pufferfish_bucket",count:1,components:{"minecraft:custom_model_data":15}},Tags:["SGCountdownTimer"]}
 scoreboard players set $CountdownTimerActivated timers 1
 
 #bossbar
