@@ -79,7 +79,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:protection": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -93,7 +96,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:projectile_protection": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -107,7 +113,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:sharpness": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -121,7 +130,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:flame": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -135,7 +147,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:power": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -149,7 +164,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:fire_aspect": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -163,7 +181,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:infinity": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -175,7 +196,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:harming",
+              "id": "minecraft:harming"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -187,7 +211,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:poison",
+              "id": "minecraft:poison"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -199,7 +226,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:swiftness",
+              "id": "minecraft:swiftness"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -211,7 +241,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:strength",
+              "id": "minecraft:strength"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -223,7 +256,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:fire_resistance",
+              "id": "minecraft:fire_resistance"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -235,7 +271,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:regeneration",
+              "id": "minecraft:regeneration"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -247,7 +286,10 @@
           "functions": [
             {
               "function": "minecraft:set_potion",
-              "id": "minecraft:healing",
+              "id": "minecraft:healing"
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]

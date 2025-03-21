@@ -1,8 +1,8 @@
 {
     "pack": {
-        "pack_format": 61,
+        "pack_format": 71,
         "description": "Datapack for Ruins of Altrac",
-        "supported_formats": [57, 61]
+        "supported_formats": [57, 71]
     },
     "filter": {
         "block": [
@@ -17,6 +17,10 @@
             {
                 "formats": 57,
                 "directory": "1.21.2"
+            },
+            {
+                "formats": 61,
+                "directory": "1.21.4"
             }
         ]
     }

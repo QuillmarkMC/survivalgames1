@@ -1,0 +1,3 @@
+clear @s
+item replace entity @s hotbar.1 with bow[custom_name='{"translate":"text.lobby.archery.bow.name","color":"#A335EE","italic":false}',lore=['{"translate":"text.lobby.archery.bow.lore","color":"gray","italic":false}'],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:power":100},show_in_tooltip:false},hide_additional_tooltip={}] 1
+function sg:general/player/inventory/lobby_book

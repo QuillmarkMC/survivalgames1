@@ -138,7 +138,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:protection": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -152,7 +155,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:projectile_protection": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -166,7 +172,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:sharpness": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -180,7 +189,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:knockback": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -194,7 +206,10 @@
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:power": 1
-              },
+              }
+            },
+            {
+              "function": "set_count",
               "count": 1
             }
           ]
