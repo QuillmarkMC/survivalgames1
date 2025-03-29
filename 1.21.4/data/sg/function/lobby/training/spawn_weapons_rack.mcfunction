@@ -1,0 +1,5 @@
+function sg:lobby/training/kill_weapons_rack
+summon armor_stand -234.208914 16.367415 158.022410 {Tags:["SGWeaponsRack","SGWeaponsRackSword"],Invulnerable:true,ShowArms:true,Invisible:true,Pose:{RightArm:[80f,0f,0f]},HandItems:[{id:"diamond_sword",Count:1b,tag:{Damage:0}}],NoGravity:true,DisabledSlots:4144959}
+summon armor_stand -234.208914 15.647415 155.022410 {Tags:["SGWeaponsRack","SGWeaponsRackAxe"],Invulnerable:true,ShowArms:true,Invisible:true,Pose:{RightArm:[-100f,0f,0f]},HandItems:[{id:"stone_axe",Count:1b,tag:{Damage:0}}],NoGravity:true,DisabledSlots:4144959}
+summon armor_stand -234.558914 16.187415 156.452410 {Tags:["SGWeaponsRack","SGWeaponsRackCrossbow"],Invulnerable:true,ShowArms:true,Invisible:true,Pose:{RightArm:[0f,90f,180f]},HandItems:[{id:"crossbow",Count:1b,tag:{Damage:0}}],NoGravity:true,DisabledSlots:4144959}
+summon armor_stand -234.808914 15.247415 156.022410 {Tags:["SGWeaponsRack","SGWeaponsRackBow"],Invulnerable:true,ShowArms:true,Invisible:true,Pose:{RightArm:[-40f,0f,-40f]},HandItems:[{id:"bow",Count:1b,tag:{Damage:0}}],NoGravity:true,DisabledSlots:4144959}
