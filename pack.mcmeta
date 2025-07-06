@@ -21,6 +21,10 @@
             {
                 "formats": 61,
                 "directory": "1.21.4"
+            },
+            {
+                "formats": 71,
+                "directory": "1.21.5"
             }
         ]
     }

@@ -166,7 +166,6 @@ gamerule drowningDamage true
 gamerule fireDamage true
 gamerule freezeDamage true
 gamerule keepInventory false
-gamerule locatorBar false
 gamerule maxEntityCramming 999
 gamerule mobGriefing false
 gamerule playersSleepingPercentage 101
