@@ -173,4 +173,5 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule spectatorsGenerateChunks false
 gamerule sendCommandFeedback false
-gamerule spawnChunkRadius 0
+gamerule commandBlocksEnabled true
+gamerule pvp true
