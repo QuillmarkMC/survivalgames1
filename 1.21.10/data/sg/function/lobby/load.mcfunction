@@ -6,9 +6,9 @@ scoreboard players set $EntityLoad lobbyVar 0
 scoreboard players set $EntityLoadTimer lobbyVar 0
 schedule clear sg:lobby/countdown
 
-gamerule fall_damage false
-gamerule show_death_messages false
-gamerule natural_health_regeneration true
+gamerule fallDamage false
+gamerule showDeathMessages false
+gamerule naturalRegeneration true
 difficulty easy
 
 function sg:game/logic/border/set_lobby

@@ -1,7 +1,7 @@
 {
     "pack": {
         "min_format": [88,0],
-        "max_format": [88,0],
+        "max_format": [94,1],
         "description": "Datapack for Ruins of Altrac"
     },
     "filter": {
@@ -9,6 +9,15 @@
             {
                 "namespace": "minecraft",
                 "path": "advancement/.*"
+            }
+        ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1.21.10",
+                "min_format": [88,0],
+                "max_format": [88,0]
             }
         ]
     }

@@ -48,8 +48,8 @@ execute store result score $CurrentPlayers win if entity @a[tag=SGPlaying,gamemo
 scoreboard players operation $ExpectedPlayers win = $CurrentPlayers win
 
 #gamerule
-gamerule fall_damage true
-gamerule show_death_messages true
-execute if score $UHC options matches 1 run gamerule natural_health_regeneration false
+gamerule fallDamage true
+gamerule showDeathMessages true
+execute if score $UHC options matches 1 run gamerule naturalRegeneration false
 difficulty hard
 function sg:general/teams/friendly_fire_off
