@@ -153,7 +153,7 @@ gamerule command_blocks_work true
 gamerule raids false
 gamerule advance_time false
 gamerule entity_drops false
-gamerule fire_spread_radius_around_player -1
+gamerule fire_spread_radius_around_player 0
 gamerule spawn_phantoms false
 gamerule immediate_respawn true
 gamerule limited_crafting true
@@ -178,3 +178,4 @@ gamerule pvp true
 gamerule allow_entering_nether_using_portals false
 gamerule projectiles_can_break_blocks false
 gamerule respawn_radius 0
+gamerule random_tick_speed 0
