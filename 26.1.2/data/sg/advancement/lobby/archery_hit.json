@@ -1,14 +1,15 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:entity_hurt_player",
+        "trigger": "minecraft:player_killed_entity",
         "conditions": {
-          "player": [
+          "entity": [
             {
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "entity_type": "minecraft:player"
+                "type": "minecraft:zombified_piglin",
+                "nbt": "{Tags:[\"SGArcheryTarget\"]}"
               }
             }
           ]
@@ -16,7 +17,7 @@
       }
     },
     "rewards": {
-      "function": "sg:game/logic/combat/combat_detection"
+      "function": "sg:lobby/archery/gameplay/zombies/hit"
     }
   }
   

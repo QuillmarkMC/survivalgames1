@@ -8,7 +8,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "minecraft:zombified_piglin",
+                "entity_type": "minecraft:zombified_piglin",
                 "nbt": "{Tags:[\"SGArcheryTarget\"]}"
               }
             }
