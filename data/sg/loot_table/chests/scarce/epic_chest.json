@@ -3,6 +3,7 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 2
       },
@@ -11,25 +12,43 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "weight": 15,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 4
             }
-          ]
-        },{
+          }
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
           "weight": 20,
-          "functions": [
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 3,
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_potion",
+              "id": "minecraft:harming"
+            },
+            {
+              "type": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 2
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 8
               }
             }
           ]
@@ -37,52 +56,35 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
-          "functions": [
+          "weight": 3,
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:harming"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 8
-              }
-            }
-          ],
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:slowness"
             },
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 5,
                 "max": 8
               }
             }
-          ],
-          "weight": 3
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:protection": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -91,15 +93,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:projectile_protection": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -108,15 +110,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:sharpness": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -125,15 +127,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:flame": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -142,15 +144,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:power": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -159,15 +161,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:fire_aspect": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -176,15 +178,15 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:infinity": 1
               }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -193,13 +195,13 @@
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:harming"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -208,13 +210,13 @@
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:poison"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -223,13 +225,13 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:swiftness"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -238,13 +240,13 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:strength"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -253,13 +255,13 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:fire_resistance"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -268,13 +270,13 @@
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:regeneration"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -283,13 +285,13 @@
           "type": "minecraft:item",
           "name": "minecraft:splash_potion",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_potion",
+              "type": "minecraft:set_potion",
               "id": "minecraft:healing"
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": 1
             }
           ]
@@ -297,13 +299,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ender_pearl",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "weight": 10
+          "weight": 10,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 1
+          }
         }
       ]
     }
