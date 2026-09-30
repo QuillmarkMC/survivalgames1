@@ -1,66 +1,63 @@
-[
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
+{
+    "type": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
         [
-          {
-            "translate": "text.lobby.team_select.item.blue.lore",
-            "color": "dark_gray",
-            "italic": true
-          }
+            {
+                "translate": "text.lobby.team_select.item.blue.lore",
+                "color": "dark_gray",
+                "italic": true
+            }
         ],
         [
-          {
-            "translate": "text.lobby.team_select.item.current_players.lore",
-            "color": "#ed771c",
-            "italic": false
-          },
-          {
-            "score": {
-              "name": "#BlueCount",
-              "objective": "teams"
+            {
+                "translate": "text.lobby.team_select.item.current_players.lore",
+                "color": "#ed771c",
+                "italic": false
             },
-            "color": "gray",
-            "italic": false
-          }
+            {
+                "score": {
+                    "name": "#BlueCount",
+                    "objective": "teams"
+                },
+                "color": "gray",
+                "italic": false
+            }
         ],
         [
-          {
-            "translate": "text.lobby.team_select.item.max_players.lore",
-            "color": "#ed771c",
-            "italic": false
-          },
-          {
-            "score": {
-              "name": "$MaxTeamSize",
-              "objective": "teams"
+            {
+                "translate": "text.lobby.team_select.item.max_players.lore",
+                "color": "#ed771c",
+                "italic": false
             },
-            "color": "gray",
-            "italic": false
-          }
+            {
+                "score": {
+                    "name": "$MaxTeamSize",
+                    "objective": "teams"
+                },
+                "color": "gray",
+                "italic": false
+            }
         ],
         [
-          {
-            "text": "",
-            "color": "white",
-            "italic": false
-          }
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            }
         ],
         [
-          {
-            "text": "",
-            "color": "white",
-            "italic": false
-          },
-          {
-            "selector": "@a[team=Blue]",
-            "color": "white",
-            "italic": false
-          }
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "selector": "@a[team=Blue]",
+                "color": "white",
+                "italic": false
+            }
         ]
-      ],
-      "mode": "replace_all"
-    }
-  ]
-  
+    ],
+    "mode": "replace_all"
+}

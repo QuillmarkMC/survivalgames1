@@ -16,30 +16,28 @@
             "weight": 30,
             "quality": 2,
             "value": "sg:fishing/secret",
-            "conditions": [
-              {
-                "condition": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "location": {
-                      "position": {
-                        "x": {
-                          "min": -374.5,
-                          "max": -309.5
-                        },
-                        "y": {
-                          "min": 24,
-                          "max": 35
-                        },
-                        "z": {
-                          "min": 213.5,
-                          "max": 284
-                        }
-                      }
+            "condition": {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "position": {
+                    "x": {
+                      "min": -374.5,
+                      "max": -309.5
+                    },
+                    "y": {
+                      "min": 24,
+                      "max": 35
+                    },
+                    "z": {
+                      "min": 213.5,
+                      "max": 284
                     }
                   }
+                }
               }
-            ]
+            }
           },
           {
             "type": "minecraft:loot_table",

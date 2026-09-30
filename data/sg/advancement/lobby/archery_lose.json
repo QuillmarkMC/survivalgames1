@@ -6,7 +6,11 @@
         "damage": {
           "source_entity": {
             "entity_type": "minecraft:zombified_piglin",
-            "nbt": "{Tags:[\"SGArcheryTarget\"]}"
+            "entity_tags": {
+              "all_of": [
+                "SGArcheryTarget"
+              ]
+            }
           }
         }
       }
